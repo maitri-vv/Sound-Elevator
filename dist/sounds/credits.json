@@ -1,0 +1,74 @@
+{
+  "bird": {
+    "id": "bird",
+    "title": "File:Bird singing.ogg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bird_singing.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Bird_singing.ogg",
+    "license": "Public domain",
+    "licenseurl": null,
+    "artist": "jc",
+    "description": "\nTitle Bird singing\nArtist jc\nOriginal mp3 data Length:1:03 minutes (981.68 KB) Format:MP3 Mono 44kHz 128Kbps (CBR)\nUser tags Bird, Birds, Birdsong, singing\nType Natural\nPDSounds record number 604\nComment bird in front of window, singing at 5AM.",
+    "local": "sounds/bird.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  },
+  "taxi": {
+    "id": "taxi",
+    "title": "File:Ambient sound street traffic Berlin 2026-05-17.oga",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ambient_sound_street_traffic_Berlin_2026-05-17.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Ambient_sound_street_traffic_Berlin_2026-05-17.oga",
+    "license": "CC BY-SA 4.0",
+    "licenseurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "SchlurcherBot",
+    "description": "An outdoor recording in an urban environment where the sounds of cars driving by on an asphalt road are clearly audible.",
+    "local": "sounds/taxi.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  },
+  "stream": {
+    "id": "stream",
+    "title": "File:363120 fractalstudios water-trickle.wav",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/363120_fractalstudios_water-trickle.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:363120_fractalstudios_water-trickle.wav",
+    "license": "CC0",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "FractalStudios",
+    "description": "A small burn trickling through a wooded area.\nRecorded on a Zoom H1.",
+    "local": "sounds/stream.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  },
+  "bell": {
+    "id": "bell",
+    "title": "File:Samariter Church Bell III (b).ogg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Samariter_Church_Bell_III_%28b%29.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Samariter_Church_Bell_III_(b).ogg",
+    "license": "CC BY-SA 4.0",
+    "licenseurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pete w. View",
+    "description": "Chime of church bell III (b)",
+    "local": "sounds/bell.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  },
+  "bicycle": {
+    "id": "bicycle",
+    "title": "File:Bicycle-bell-1.wav",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bicycle-bell-1.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Bicycle-bell-1.wav",
+    "license": "CC0",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "Soundscape_Leuphana",
+    "description": "A bicycle bell, recorded on the campus of the university\nWave, 44.1kHz, 24bit, stereo\nRecording Device: Zoom H2 with y-capsule\nLow-Cut: yes (80Hz)\nNormalized to -1dBFS\nLocation: Leuphana Universit\u00e4t L\u00fcneburg\nLat: 53.229288074107664\nLon: 10.4001769423",
+    "local": "sounds/bicycle.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  },
+  "thunder": {
+    "id": "thunder",
+    "title": "File:Thunder.ogg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Thunder.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Thunder.ogg",
+    "license": "CC BY 3.0",
+    "licenseurl": "https://creativecommons.org/licenses/by/3.0",
+    "artist": "Bidgee",
+    "description": "Thunder recorded in Darwin, Northern Territory, Australia",
+    "local": "sounds/thunder.mp3",
+    "changes": "Excerpt up to 24 seconds; converted to mono MP3, normalized, faded."
+  }
+}

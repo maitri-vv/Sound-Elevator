@@ -1,0 +1,666 @@
+[
+  {
+    "number": 1,
+    "id": "soil",
+    "height": 0,
+    "title": "What is alive under your shoes?",
+    "track": "bird",
+    "label": "Outdoor habitat · real birdsong recorded near a window",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 2,
+    "id": "flea",
+    "height": 0.18,
+    "title": "How high can a flea jump?",
+    "kind": "quiet",
+    "label": "Quiet · no invented jump or human sound effect"
+  },
+  {
+    "number": 3,
+    "id": "clock",
+    "height": 0.33,
+    "title": "Can lifting a clock change its ticking?",
+    "track": "clock",
+    "label": "Mechanical clock demonstration · the experiment used optical clocks",
+    "reach": 1,
+    "gain": 0.16,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 4,
+    "id": "seed",
+    "height": 0.5,
+    "title": "Where does this tiny parachute take off?",
+    "track": "forest-wind",
+    "label": "Woodland wind · habitat ambience recorded in Bourne Woods, UK",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 5,
+    "id": "city-window",
+    "height": 1.21,
+    "title": "How does a piano this tall make music?",
+    "track": "piano",
+    "label": "Piano phrase · slide the glass to muffle it",
+    "reach": 3,
+    "gain": 0.3,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 6,
+    "id": "horizon",
+    "height": 2,
+    "title": "How far can you see when you stand by the sea?",
+    "track": "bird",
+    "label": "Outdoor habitat · real birdsong recorded near a window",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 7,
+    "id": "wadlow",
+    "height": 2.72,
+    "title": "How tall was the tallest person?",
+    "kind": "quiet",
+    "label": "Quiet · no invented jump or human sound effect"
+  },
+  {
+    "number": 8,
+    "id": "owl",
+    "height": 3,
+    "title": "How high should a barn owl’s home be?",
+    "track": "owl",
+    "label": "Barn owl call · Dapoli, India",
+    "reach": 4,
+    "gain": 0.23,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 9,
+    "id": "elephant",
+    "height": 3.2,
+    "title": "How tall is an elephant’s shoulder?",
+    "track": "elephant",
+    "label": "African elephant rumble · original-speed research recording",
+    "reach": 15,
+    "gain": 0.28,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 10,
+    "id": "bee",
+    "height": 5,
+    "title": "Would bees choose an upstairs home?",
+    "track": "bees",
+    "label": "Honeybees buzzing at a hive",
+    "reach": 4,
+    "gain": 0.2,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 11,
+    "id": "giraffe",
+    "height": 5.5,
+    "title": "What sound comes from this tall animal?",
+    "track": "giraffe",
+    "label": "Giraffe hum · original recording from the 2015 study",
+    "reach": 5,
+    "gain": 0.3,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 12,
+    "id": "hummingbird",
+    "height": 8,
+    "title": "Where does a hummingbird hide its nest?",
+    "track": "forest-wind",
+    "label": "Woodland wind · habitat ambience recorded in Bourne Woods, UK",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 13,
+    "id": "bat",
+    "height": 9,
+    "title": "Who hunts with sound above your head?",
+    "track": "bat-slow",
+    "label": "Big brown bat feeding buzz · slowed 10× to make ultrasound audible",
+    "reach": 7,
+    "gain": 0.24,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 14,
+    "id": "windmast",
+    "height": 10,
+    "title": "Why measure the wind this high?",
+    "track": "forest-wind",
+    "label": "Wind through trees · a real wind recording, not sound made by the meter",
+    "reach": 1,
+    "gain": 0.16,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 15,
+    "id": "sunflower",
+    "height": 10.9,
+    "title": "Can a sunflower grow taller than a house?",
+    "track": "forest-wind",
+    "label": "Woodland wind · habitat ambience recorded in Bourne Woods, UK",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 16,
+    "id": "diver",
+    "height": 27,
+    "title": "Would you jump from this high?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 17,
+    "id": "shibam",
+    "height": 30,
+    "title": "Can mud bricks make a tall tower?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 18,
+    "id": "geyser",
+    "height": 40,
+    "title": "Can hot water shoot this high?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 19,
+    "id": "migrant-calls",
+    "height": 48.8,
+    "title": "Who builds a nest almost 50 m up?",
+    "track": "night-flight",
+    "label": "Black-crowned night-heron flight calls · Dresden",
+    "reach": 30,
+    "gain": 0.23,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 20,
+    "id": "city-tower",
+    "height": 60,
+    "title": "Where is this ringing coming from?",
+    "track": "bell",
+    "label": "Samariter Church bell III · the pictured church’s real bell",
+    "reach": 35,
+    "gain": 0.24,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 21,
+    "id": "opera",
+    "height": 67,
+    "title": "How high do these stone sails reach?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 22,
+    "id": "c11",
+    "height": 80,
+    "title": "Could a falcon make its home up here?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 23,
+    "id": "sherman",
+    "height": 83.8,
+    "title": "Is the biggest tree also the tallest?",
+    "track": "forest-wind",
+    "label": "Woodland wind · habitat ambience recorded in Bourne Woods, UK",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 24,
+    "id": "turbine",
+    "height": 99.5,
+    "title": "What is turning almost 100 m up?",
+    "track": "turbine",
+    "label": "Siemens SWT-2.3-101 wind turbine · recorded at the 99.5 m hub-height installation",
+    "reach": 100,
+    "gain": 0.22,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 25,
+    "id": "redwood",
+    "height": 116,
+    "title": "How can a tree drink this high up?",
+    "track": "forest-wind",
+    "label": "Woodland wind · habitat ambience recorded in Bourne Woods, UK",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 26,
+    "id": "pyramid",
+    "height": 146.5,
+    "title": "How high did the Great Pyramid once reach?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 27,
+    "id": "dunes",
+    "height": 183,
+    "title": "Can a hill of sand make a sound?",
+    "kind": "quiet",
+    "label": "Quiet · the available beach-sand squeak is not a Kelso dune boom"
+  },
+  {
+    "number": 28,
+    "id": "droplet",
+    "height": 200,
+    "title": "Can a cloud hang just above the rooftops?",
+    "kind": "quiet",
+    "label": "Quiet · floating cloud droplets have no audible voice"
+  },
+  {
+    "number": 29,
+    "id": "eiffel",
+    "height": 330,
+    "title": "Can sunshine make a tower lean?",
+    "track": "taxi",
+    "label": "Distant city traffic · a Berlin street recording used as urban ambience",
+    "reach": 1,
+    "gain": 0.1,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 30,
+    "id": "bridge",
+    "height": 343,
+    "title": "Can a bridge reach higher than the Eiffel Tower?",
+    "track": "taxi",
+    "label": "Distant city traffic · a Berlin street recording used as urban ambience",
+    "reach": 1,
+    "gain": 0.1,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 31,
+    "id": "insects",
+    "height": 400,
+    "title": "Is there a river of insects over our heads?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 32,
+    "id": "taipei",
+    "height": 508,
+    "title": "How does this tall tower stay steady?",
+    "track": "taxi",
+    "label": "Distant city traffic · a Berlin street recording used as urban ambience",
+    "reach": 1,
+    "gain": 0.1,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 33,
+    "id": "lituya",
+    "height": 524,
+    "title": "How far up a mountain can a wave climb?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 34,
+    "id": "rain-cloud",
+    "height": 610,
+    "title": "Where can a long rainy day begin?",
+    "track": "rain",
+    "label": "Rain falling · a real rain recording heard beneath a rain cloud",
+    "reach": 180,
+    "gain": 0.2,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 35,
+    "id": "burj",
+    "height": 828,
+    "title": "How far above the street does this tower reach?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated event or species recording substituted"
+  },
+  {
+    "number": 36,
+    "id": "falls",
+    "height": 979,
+    "title": "How long is the world’s tallest waterfall?",
+    "track": "waterfall",
+    "label": "Waterfall roar · representative waterfall, recorded elsewhere",
+    "reach": 140,
+    "gain": 0.28,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 37,
+    "id": "thunder-delay",
+    "height": 1000,
+    "title": "If lightning flashes 1 km overhead, when will you hear it?",
+    "track": "thunder",
+    "label": "Thunder · real ground recording from Darwin, Australia",
+    "reach": 300,
+    "gain": 0.22,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 38,
+    "id": "table",
+    "height": 1086,
+    "title": "Why does this mountain wear a tablecloth?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 39,
+    "id": "longjump",
+    "height": 2240,
+    "title": "What happened at this high-up Olympic stadium?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 40,
+    "id": "swift",
+    "height": 2500,
+    "title": "Who flies this high as the sun goes down?",
+    "track": "swift",
+    "label": "Common swift calls · recorded at a nest box, not during the high ascent",
+    "reach": 200,
+    "gain": 0.22,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 41,
+    "id": "uv",
+    "height": 3000,
+    "title": "Why is mountain sunshine stronger?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 42,
+    "id": "sphinx",
+    "height": 3571,
+    "title": "Can you ride a lift into a mountaintop?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 43,
+    "id": "titicaca",
+    "height": 3812,
+    "title": "Can boats sail higher than many mountains?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 44,
+    "id": "dust",
+    "height": 4000,
+    "title": "Can desert dust fly across an ocean?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 45,
+    "id": "spider",
+    "height": 4500,
+    "title": "Can a spider fly higher than a mountain?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 46,
+    "id": "alma",
+    "height": 5000,
+    "title": "Why put these giant dishes on a high desert?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 47,
+    "id": "half-air",
+    "height": 5500,
+    "title": "Have we already climbed past half the air?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 48,
+    "id": "chimborazo",
+    "height": 6263,
+    "title": "Which mountaintop is farthest from Earth’s middle?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 49,
+    "id": "mouse",
+    "height": 6739,
+    "title": "Can a mouse live this high?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 50,
+    "id": "death-zone",
+    "height": 8000,
+    "title": "Why is it so hard to breathe up here?",
+    "track": "wind-snow",
+    "label": "Mountain-weather ambience · real wind and snow recorded in Abisko, Sweden",
+    "reach": 1,
+    "gain": 0.13,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 51,
+    "id": "bacteria",
+    "height": 8500,
+    "title": "Are tiny living things floating this high?",
+    "kind": "quiet",
+    "label": "Quiet · no unrelated recording substituted for the pictured subject"
+  },
+  {
+    "number": 52,
+    "id": "helicopter",
+    "height": 8849,
+    "title": "Could a helicopter land on the top of Everest?",
+    "track": "helicopter",
+    "label": "Helicopter rotor · representative aircraft, not the Everest landing recording",
+    "reach": 600,
+    "gain": 0.22,
+    "mode": "loop",
+    "kind": "recording"
+  },
+  {
+    "number": 53,
+    "id": "mach",
+    "height": 11000,
+    "title": "Does sound travel more slowly up here?",
+    "kind": "quiet",
+    "label": "Quiet · an A320 takeoff does not represent Concorde or sound speed at cruise altitude"
+  },
+  {
+    "number": 54,
+    "id": "concorde",
+    "height": 18000,
+    "title": "Could a passenger plane fly this high?",
+    "kind": "quiet",
+    "label": "Quiet · an A320 takeoff does not represent Concorde or sound speed at cruise altitude"
+  },
+  {
+    "number": 55,
+    "id": "armstrong",
+    "height": 19000,
+    "title": "Can warm water boil without getting hotter?",
+    "kind": "quiet",
+    "label": "Quiet · no ground-pressure kettle sound used for low-pressure boiling"
+  },
+  {
+    "number": 56,
+    "id": "hot-balloon",
+    "height": 21027,
+    "title": "How high has a hot-air balloon flown?",
+    "track": "burner",
+    "label": "Hot-air balloon burner · real recording from a different flight",
+    "reach": 1,
+    "gain": 0.2,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 57,
+    "id": "ozone",
+    "height": 25000,
+    "title": "What protects us from the Sun up here?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 58,
+    "id": "mars-air",
+    "height": 35000,
+    "title": "Is the air here as thin as the air on Mars?",
+    "track": "mars",
+    "label": "NASA Ingenuity rotor on Mars · filtered mission recording for the pressure comparison",
+    "reach": 1,
+    "gain": 0.24,
+    "mode": "loop",
+    "kind": "context"
+  },
+  {
+    "number": 59,
+    "id": "skydiver",
+    "height": 41422,
+    "title": "How high did Alan Eustace jump from?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 60,
+    "id": "record-balloon",
+    "height": 53700,
+    "title": "Can a balloon climb higher than a jet?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 61,
+    "id": "tonga",
+    "height": 57000,
+    "title": "How high can a volcano throw its cloud?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 62,
+    "id": "space-dust",
+    "height": 70000,
+    "title": "Why do shooting stars glow?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 63,
+    "id": "space-line",
+    "height": 80467,
+    "title": "Have we reached space yet?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 64,
+    "id": "mesopause",
+    "height": 85000,
+    "title": "Can a cloud glow after sunset?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 65,
+    "id": "laser",
+    "height": 90000,
+    "title": "How can a telescope make a star?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  },
+  {
+    "number": 66,
+    "id": "e12",
+    "height": 100000,
+    "title": "Has gravity disappeared?",
+    "kind": "quiet",
+    "label": "Quiet · no invented sounds in the thin upper atmosphere"
+  }
+]

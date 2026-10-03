@@ -1,0 +1,54 @@
+[
+  {
+    "id": "wind-snow",
+    "file": "wind-snow.mp3",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:20221229_-_Abisko_Turiststation_at_night_-_Wind_and_snow.wav",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/20221229_-_Abisko_Turiststation_at_night_-_Wind_and_snow.wav",
+    "title": "20221229 - Abisko Turiststation at night - Wind and snow.wav",
+    "author": "Fabricio Cardenas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "recorded": "Recording of the wind blowing the snow on December 29 2022 in the evening at Abisko Turiststation.",
+    "duration": 24,
+    "modifications": "Excerpt, loudness normalization and short fades; MP3 encoding."
+  },
+  {
+    "id": "waterfall",
+    "file": "waterfall.mp3",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Water_fall.ogg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Water_fall.ogg",
+    "title": "Water fall.ogg",
+    "author": "Benzband",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "recorded": "White water at the foot of a waterfall.",
+    "duration": 24,
+    "modifications": "Excerpt, loudness normalization and short fades; MP3 encoding."
+  },
+  {
+    "id": "train",
+    "file": "train.mp3",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Freight_train_passes_Phelan,_startles_Canadian_geese.flac",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Freight_train_passes_Phelan%2C_startles_Canadian_geese.flac",
+    "title": "Freight train passes Phelan, startles Canadian geese.flac",
+    "author": "Extemporalist",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "recorded": "Freight train passes Phelan, British Columbia, startles Canadian geese",
+    "duration": 24,
+    "modifications": "Excerpt, loudness normalization and short fades; MP3 encoding."
+  },
+  {
+    "id": "piano",
+    "file": "piano.mp3",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Piano-phrase.wav",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Piano-phrase.wav",
+    "title": "Piano-phrase.wav",
+    "author": "Xavier-Serra",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "recorded": "This is xavier serra piano audio sound",
+    "duration": 3.845805,
+    "modifications": "Excerpt, loudness normalization and short fades; MP3 encoding."
+  }
+]

@@ -1,0 +1,738 @@
+[
+  {
+    "number": 1,
+    "id": "soil",
+    "heightMetres": 0,
+    "heightMeaning": "GROUND SURFACE",
+    "question": "What is alive under your shoes?",
+    "answer": "Right at ground level, a teaspoon of good soil can hold up to a billion bacteria—tiny living things too small to see.",
+    "sources": [
+      "https://forces.si.edu/soils/02_01_00.html"
+    ]
+  },
+  {
+    "number": 2,
+    "id": "flea",
+    "heightMetres": 0.18,
+    "heightMeaning": "REPORTED VERTICAL JUMP",
+    "question": "How high can a flea jump?",
+    "answer": "A flea can jump about 18 cm straight up. Springy parts inside its body store energy, then release it in one tiny leap.",
+    "sources": [
+      "https://www.facebook.com/naturalhistorymuseum/posts/how-far-can-you-jump-if-youre-not-clearing-50-times-your-own-body-length-youve-g/1393722612793301/",
+      "https://www.cam.ac.uk/research/news/mystery-of-how-fleas-jump-resolved"
+    ]
+  },
+  {
+    "number": 3,
+    "id": "clock",
+    "heightMetres": 0.33,
+    "heightMeaning": "EXPERIMENTAL VERTICAL SEPARATION",
+    "question": "Can lifting a clock change its ticking?",
+    "answer": "Scientists lifted a super-precise clock just 33 cm. It ticked a tiny bit faster because Earth’s pull was slightly weaker.",
+    "sources": [
+      "https://www.nist.gov/news-events/news/2010/09/nist-clock-experiment-demonstrates-your-head-older-your-feet"
+    ]
+  },
+  {
+    "number": 4,
+    "id": "seed",
+    "heightMetres": 0.5,
+    "heightMeaning": "UPPER REPORTED PLANT HEIGHT",
+    "question": "Where does this tiny parachute take off?",
+    "answer": "Dandelions can grow 50 cm tall. When the wind catches their fluffy seeds, each seed floats away like a little parachute.",
+    "sources": [
+      "https://www.kew.org/plants/dandelion",
+      "https://biology.ed.ac.uk/news-events/news-2018/dandelion-seeds-reveal-newly-discovered-form-of-na"
+    ]
+  },
+  {
+    "number": 5,
+    "id": "city-window",
+    "heightMetres": 1.21,
+    "heightMeaning": "INSTRUMENT HEIGHT",
+    "question": "How does a piano this tall make music?",
+    "answer": "A Yamaha U1 piano stands 1.21 m tall. Press a key and a little hammer hits strings inside to make a note.",
+    "sources": [
+      "https://in.yamaha.com/en/musical-instruments/pianos/products/upright-pianos/u-series/specs.html",
+      "https://hub.yamaha.com/pianos/p-acoustic/how-does-a-piano-work/"
+    ]
+  },
+  {
+    "number": 6,
+    "id": "horizon",
+    "heightMetres": 2,
+    "heightMeaning": "CALCULATED VIEW FROM EYES 2 m ABOVE SEA LEVEL",
+    "question": "How far can you see when you stand by the sea?",
+    "answer": "If your eyes are 2 m above a flat sea, the horizon is about 5 km away. Climb higher and you can see farther.",
+    "sources": [
+      "https://pwg.gsfc.nasa.gov/stargaze/Shorizon.htm"
+    ]
+  },
+  {
+    "number": 7,
+    "id": "wadlow",
+    "heightMetres": 2.72,
+    "heightMeaning": "MEASURED STANDING HEIGHT",
+    "question": "How tall was the tallest person?",
+    "answer": "Robert Wadlow grew to 2.72 m tall—taller than most doorways. He was measured in 1940 and remains the tallest person ever reliably recorded.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/tallest-man-ever"
+    ]
+  },
+  {
+    "number": 8,
+    "id": "owl",
+    "heightMetres": 3,
+    "heightMeaning": "RECOMMENDED MINIMUM NEST-BOX HEIGHT",
+    "question": "How high should a barn owl’s home be?",
+    "answer": "A barn owl nest box should be at least 3 m above the ground. From its high home, the owl can fly out to hunt.",
+    "sources": [
+      "https://www.barnowltrust.org.uk/barn-owl-nestbox/barn-owl-nestboxes/"
+    ]
+  },
+  {
+    "number": 9,
+    "id": "elephant",
+    "heightMetres": 3.2,
+    "heightMeaning": "AVERAGE MALE SHOULDER-HEIGHT RANGE",
+    "question": "How tall is an elephant’s shoulder?",
+    "answer": "Male African savanna elephants average about 3–3.2 m at the shoulder. These huge animals make deep rumbles to talk to each other.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/elephant",
+      "https://www.birds.cornell.edu/ccb/elephant-listening-project/sound/"
+    ]
+  },
+  {
+    "number": 10,
+    "id": "bee",
+    "heightMetres": 5,
+    "heightMeaning": "EXPERIMENTAL NEST-BOX HEIGHT",
+    "question": "Would bees choose an upstairs home?",
+    "answer": "In nest-choice tests, honeybees preferred a home 5 m above the ground over one just 1 m up. A hollow tree can become their buzzing home.",
+    "sources": [
+      "https://link.springer.com/article/10.1007/s10841-023-00530-7"
+    ]
+  },
+  {
+    "number": 11,
+    "id": "giraffe",
+    "heightMetres": 5.5,
+    "heightMeaning": "MAXIMUM REPORTED MALE HEIGHT",
+    "question": "What sound comes from this tall animal?",
+    "answer": "Male giraffes can reach 5.5 m tall. Scientists recorded giraffes making soft, low hums at night.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/giraffe",
+      "https://link.springer.com/article/10.1186/s13104-015-1394-3"
+    ]
+  },
+  {
+    "number": 12,
+    "id": "hummingbird",
+    "heightMetres": 8,
+    "heightMeaning": "WITHIN OBSERVED NEST HEIGHTS · 3–12 m ABOVE GROUND",
+    "question": "Where does a hummingbird hide its nest?",
+    "answer": "Ruby-throated hummingbirds usually build nests about 3–12 m above the ground. Each little nest is only about as wide as a golf ball.",
+    "sources": [
+      "https://www.allaboutbirds.org/guide/Ruby-throated_Hummingbird/lifehistory"
+    ]
+  },
+  {
+    "number": 13,
+    "id": "bat",
+    "heightMetres": 9,
+    "heightMeaning": "REPORTED FORAGING HEIGHT · BELOW ABOUT 9 m",
+    "question": "Who hunts with sound above your head?",
+    "answer": "Big brown bats often hunt below about 9 m at Mount Rainier. They call and listen for echoes to find insects; this recording is slowed so we can hear it.",
+    "sources": [
+      "https://home.nps.gov/mora/learn/nature/bats.htm"
+    ]
+  },
+  {
+    "number": 14,
+    "id": "windmast",
+    "heightMetres": 10,
+    "heightMeaning": "STANDARD WIND-MEASUREMENT HEIGHT",
+    "question": "Why measure the wind this high?",
+    "answer": "Weather stations usually measure wind 10 m above the ground. Up here, nearby grass and small obstacles have less effect on the reading.",
+    "sources": [
+      "https://weather.metoffice.gov.uk/guides/observations/how-we-measure-wind"
+    ]
+  },
+  {
+    "number": 15,
+    "id": "sunflower",
+    "heightMetres": 10.9,
+    "heightMeaning": "MEASURED PLANT RECORD · 2025",
+    "question": "Can a sunflower grow taller than a house?",
+    "answer": "Alex Babich grew a sunflower 10.90 m tall in 2025. That is about the height of a three-storey house!",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/tallest-sunflower"
+    ]
+  },
+  {
+    "number": 16,
+    "id": "diver",
+    "heightMetres": 27,
+    "heightMeaning": "COMPETITION PLATFORM ABOVE WATER",
+    "question": "Would you jump from this high?",
+    "answer": "Men’s championship high divers leap from a platform 27 m above the water. They turn in the air and enter the water feet first.",
+    "sources": [
+      "https://www.worldaquatics.com/news/4529421/world-aquatics-expands-high-diving-world-cup-to-three-stops-adding-zhaoqing-china-for-2026"
+    ]
+  },
+  {
+    "number": 17,
+    "id": "shibam",
+    "heightMetres": 30,
+    "heightMeaning": "APPROXIMATE BUILDING HEIGHT",
+    "question": "Can mud bricks make a tall tower?",
+    "answer": "In Shibam, Yemen, people built mud-brick homes around 30 m tall. Thick walls at the bottom help support the rooms stacked above.",
+    "sources": [
+      "https://www.archdaily.com/1039429/the-earthen-towers-of-shibam-a-vertical-city-in-the-yemeni-desert",
+      "https://whc.unesco.org/en/list/192/"
+    ]
+  },
+  {
+    "number": 18,
+    "id": "geyser",
+    "heightMetres": 40,
+    "heightMeaning": "OCCASIONAL MAXIMUM ERUPTION HEIGHT ABOVE VENT",
+    "question": "Can hot water shoot this high?",
+    "answer": "Iceland’s Strokkur geyser can sometimes throw hot water 40 m into the air. Water heated underground bursts upward in a sudden spray.",
+    "sources": [
+      "https://mapoficeland.is/geysers/strokkur/",
+      "https://www.visiticeland.com/article/the-golden-circle/"
+    ]
+  },
+  {
+    "number": 19,
+    "id": "migrant-calls",
+    "heightMetres": 48.8,
+    "heightMeaning": "UPPER REPORTED NEST HEIGHT · 160 ft",
+    "question": "Who builds a nest almost 50 m up?",
+    "answer": "Black-crowned night herons can nest up to about 49 m above the ground. These birds often hunt after dark and make rough, croaking calls.",
+    "sources": [
+      "https://dnr.illinois.gov/education/wildaboutpages/wildaboutbirdspelicans/wabblackcrownednightheron.html"
+    ]
+  },
+  {
+    "number": 20,
+    "id": "city-tower",
+    "heightMetres": 60,
+    "heightMeaning": "TOWER HEIGHT ABOVE GROUND",
+    "question": "Where is this ringing coming from?",
+    "answer": "Berlin’s Samariter Church has a 60 m tower. Listen to its real bells ringing out over the neighbourhood.",
+    "sources": [
+      "https://www.denkmalschutz.de/pressemitteilung/samariterkirche-in-friedrichshain-wird-fertiggestellt.html"
+    ]
+  },
+  {
+    "number": 21,
+    "id": "opera",
+    "heightMetres": 67,
+    "heightMeaning": "HIGHEST ROOF ABOVE SEA LEVEL",
+    "question": "How high do these stone sails reach?",
+    "answer": "The tallest roof of the Sydney Opera House reaches 67 m above sea level. Inside, people fill its halls with music and theatre.",
+    "sources": [
+      "https://www.sydneyoperahouse.com/sites/default/files/collaborodam_assets/tourism-sales-manual-december-2020.pdf"
+    ]
+  },
+  {
+    "number": 22,
+    "id": "c11",
+    "heightMetres": 80,
+    "heightMeaning": "WITHIN REPORTED NEST-CLIFF HEIGHTS · 8–400 m",
+    "question": "Could a falcon make its home up here?",
+    "answer": "Peregrine falcons nest on cliffs from about 8 to 400 m high, sometimes higher. A ledge at this height gives them a lookout over the ground.",
+    "sources": [
+      "https://www.allaboutbirds.org/guide/Peregrine_Falcon/lifehistory"
+    ]
+  },
+  {
+    "number": 23,
+    "id": "sherman",
+    "heightMetres": 83.8,
+    "heightMeaning": "MEASURED TREE HEIGHT ABOVE BASE",
+    "question": "Is the biggest tree also the tallest?",
+    "answer": "The General Sherman tree is 83.8 m tall. Its huge, thick trunk makes it the world’s largest living tree by wood volume.",
+    "sources": [
+      "https://www.nps.gov/seki/learn/nature/sherman.htm"
+    ]
+  },
+  {
+    "number": 24,
+    "id": "turbine",
+    "heightMetres": 99.5,
+    "heightMeaning": "RECORDED TURBINE HUB HEIGHT · SIEMENS SWT-2.3-101",
+    "question": "What is turning almost 100 m up?",
+    "answer": "The centre of this wind turbine’s blades is 99.5 m above the ground. Wind turns the blades to make electricity; you can hear a real recording of this turbine model.",
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:WWS_Windturbine.ogg"
+    ]
+  },
+  {
+    "number": 25,
+    "id": "redwood",
+    "heightMetres": 116,
+    "heightMeaning": "APPROXIMATE MAXIMUM TREE HEIGHT",
+    "question": "How can a tree drink this high up?",
+    "answer": "The tallest coast redwoods reach about 116 m above their roots. Water leaving their leaves helps pull more water all the way up the trunk.",
+    "sources": [
+      "https://www.nps.gov/redw/learn/nature/about-the-trees.htm",
+      "https://www.nps.gov/redw/learn/nature/coast-redwood.htm"
+    ]
+  },
+  {
+    "number": 26,
+    "id": "pyramid",
+    "heightMetres": 146.5,
+    "heightMeaning": "ORIGINAL BUILDING HEIGHT ABOVE BASE",
+    "question": "How high did the Great Pyramid once reach?",
+    "answer": "Egypt’s Great Pyramid originally stood 146.5 m tall. Built over 4,000 years ago, it was the world’s tallest building for thousands of years.",
+    "sources": [
+      "https://egymonuments.gov.eg/en/monuments/the-great-pyramid"
+    ]
+  },
+  {
+    "number": 27,
+    "id": "dunes",
+    "heightMetres": 183,
+    "heightMeaning": "DUNE HEIGHT ABOVE BASE",
+    "question": "Can a hill of sand make a sound?",
+    "answer": "California’s Kelso Dunes rise about 183 m above their base. When dry sand slides down their sides, the dunes can make a deep booming sound.",
+    "sources": [
+      "https://www.nps.gov/places/kelso-dunes.htm"
+    ]
+  },
+  {
+    "number": 28,
+    "id": "droplet",
+    "heightMetres": 200,
+    "heightMeaning": "WITHIN TYPICAL CLOUD-BASE RANGE · 0–370 m ABOVE GROUND",
+    "question": "Can a cloud hang just above the rooftops?",
+    "answer": "Low, flat stratus clouds can start anywhere from ground level to about 370 m up. If one touches the ground, you walk through it as fog.",
+    "sources": [
+      "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/low-level-clouds"
+    ]
+  },
+  {
+    "number": 29,
+    "id": "eiffel",
+    "heightMetres": 330,
+    "heightMeaning": "STRUCTURE HEIGHT ABOVE GROUND",
+    "question": "Can sunshine make a tower lean?",
+    "answer": "The Eiffel Tower reaches 330 m above the ground. Sunshine warms one side more than the other, making its top move a little.",
+    "sources": [
+      "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size"
+    ]
+  },
+  {
+    "number": 30,
+    "id": "bridge",
+    "heightMetres": 343,
+    "heightMeaning": "MAXIMUM STRUCTURAL HEIGHT ABOVE GROUND",
+    "question": "Can a bridge reach higher than the Eiffel Tower?",
+    "answer": "The tallest part of France’s Millau Viaduct reaches 343 m above the ground. Its roadway carries cars across a deep river valley.",
+    "sources": [
+      "https://www.eiffagemetal.com/what-we-do/structures/viaduc-millau"
+    ]
+  },
+  {
+    "number": 31,
+    "id": "insects",
+    "heightMetres": 400,
+    "heightMeaning": "WITHIN MEASURED MIGRATION LAYER · 150–1,200 m ABOVE GROUND",
+    "question": "Is there a river of insects over our heads?",
+    "answer": "Radar spotted insects travelling 150–1,200 m above southern England. Researchers estimated that 3.5 trillion passed overhead in a year.",
+    "sources": [
+      "https://nri.org/latest/news/2017/nri-radar-detects-trillions-of-invisible-insects-migrating-over-uk"
+    ]
+  },
+  {
+    "number": 32,
+    "id": "taipei",
+    "heightMetres": 508,
+    "heightMeaning": "STRUCTURE HEIGHT ABOVE GROUND",
+    "question": "How does this tall tower stay steady?",
+    "answer": "Taipei 101 stands 508 m tall. A giant heavy ball hanging inside moves against the building’s sway, helping it rock less in the wind.",
+    "sources": [
+      "https://www.taipei-101.com.tw/tw/observatory/feature/damper"
+    ]
+  },
+  {
+    "number": 33,
+    "id": "lituya",
+    "heightMetres": 524,
+    "heightMeaning": "MEASURED WAVE RUN-UP ABOVE SEA LEVEL",
+    "question": "How far up a mountain can a wave climb?",
+    "answer": "In Alaska’s Lituya Bay in 1958, a landslide made a wave rush 524 m up a hillside. It stripped trees from the slope.",
+    "sources": [
+      "https://science.nasa.gov/earth/earth-observatory/lituya-bays-apocalyptic-wave-147557/"
+    ]
+  },
+  {
+    "number": 34,
+    "id": "rain-cloud",
+    "heightMetres": 610,
+    "heightMeaning": "WITHIN TYPICAL CLOUD-BASE RANGE · 2,000–10,000 ft",
+    "question": "Where can a long rainy day begin?",
+    "answer": "Thick nimbostratus clouds often have bases about 600–3,000 m above the ground. They spread across the sky and bring long spells of rain or snow.",
+    "sources": [
+      "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/mid-level-clouds"
+    ]
+  },
+  {
+    "number": 35,
+    "id": "burj",
+    "heightMetres": 828,
+    "heightMeaning": "STRUCTURE HEIGHT ABOVE GROUND",
+    "question": "How far above the street does this tower reach?",
+    "answer": "Dubai’s Burj Khalifa rises 828 m above the ground. Its narrow top is more than twice as high as the Eiffel Tower.",
+    "sources": [
+      "https://www.burjkhalifa.ae/the-tower/"
+    ]
+  },
+  {
+    "number": 36,
+    "id": "falls",
+    "heightMetres": 979,
+    "heightMeaning": "TOTAL WATERFALL DROP",
+    "question": "How long is the world’s tallest waterfall?",
+    "answer": "Angel Falls in Venezuela drops 979 m from top to bottom. Wind can turn some of its falling water into a cloud of mist.",
+    "sources": [
+      "https://whc.unesco.org/document/218578"
+    ]
+  },
+  {
+    "number": 37,
+    "id": "thunder-delay",
+    "heightMetres": 1000,
+    "heightMeaning": "CALCULATED SOUND DELAY FOR A 1 km VERTICAL PATH",
+    "question": "If lightning flashes 1 km overhead, when will you hear it?",
+    "answer": "About 3 seconds later. Light reaches you almost at once, but the thunder takes time to travel down through the air.",
+    "sources": [
+      "https://www.weather.gov/safety/lightning-science-overview"
+    ]
+  },
+  {
+    "number": 38,
+    "id": "table",
+    "heightMetres": 1086,
+    "heightMeaning": "APPROXIMATE SUMMIT ELEVATION ABOVE SEA LEVEL",
+    "question": "Why does this mountain wear a tablecloth?",
+    "answer": "Table Mountain reaches about 1,086 m above the sea. Damp air blowing up its slopes can cool into a white cloud that spills over the top.",
+    "sources": [
+      "https://www.gatewayguides.co.za/tablemountain.html",
+      "https://www.sanparks.org/parks/table-mountain/what-to-do/attractions/table-mountain"
+    ]
+  },
+  {
+    "number": 39,
+    "id": "longjump",
+    "heightMetres": 2240,
+    "heightMeaning": "CITY ELEVATION ABOVE SEA LEVEL",
+    "question": "What happened at this high-up Olympic stadium?",
+    "answer": "Mexico City sits about 2,240 m above the sea. There, Bob Beamon jumped 8.90 m forward across the sand in 1968—a world record that lasted nearly 23 years.",
+    "sources": [
+      "https://www.usatf.org/athlete-bios/bob-beamon",
+      "https://olympics.com/en/olympic-games/mexico-city-1968"
+    ]
+  },
+  {
+    "number": 40,
+    "id": "swift",
+    "heightMetres": 2500,
+    "heightMeaning": "OBSERVED TWILIGHT ASCENT · ABOVE GROUND",
+    "question": "Who flies this high as the sun goes down?",
+    "answer": "Common swifts can climb about 2,500 m above the ground at dawn and dusk. These small birds can even spend the night flying.",
+    "sources": [
+      "https://www.sciencedirect.com/science/article/pii/S0003347212005556"
+    ]
+  },
+  {
+    "number": 41,
+    "id": "uv",
+    "heightMetres": 3000,
+    "heightMeaning": "ALTITUDE-DEPENDENT UV RULE OF THUMB",
+    "question": "Why is mountain sunshine stronger?",
+    "answer": "At 3,000 m above the sea, there is less air overhead to block the Sun’s burning rays. UV levels rise roughly 10% for every 1,000 m you climb.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/radiation-ultraviolet-(uv)"
+    ]
+  },
+  {
+    "number": 42,
+    "id": "sphinx",
+    "heightMetres": 3571,
+    "heightMeaning": "VIEWING-TERRACE ELEVATION ABOVE SEA LEVEL",
+    "question": "Can you ride a lift into a mountaintop?",
+    "answer": "The Sphinx viewing terrace in Switzerland sits 3,571 m above the sea. A lift inside the mountain carries visitors up to its snowy lookout.",
+    "sources": [
+      "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe"
+    ]
+  },
+  {
+    "number": 43,
+    "id": "titicaca",
+    "heightMetres": 3812,
+    "heightMeaning": "APPROXIMATE LAKE-SURFACE ELEVATION",
+    "question": "Can boats sail higher than many mountains?",
+    "answer": "Lake Titicaca’s water lies about 3,812 m above the sea. People sail boats across this huge lake high in the Andes.",
+    "sources": [
+      "https://rsis.ramsar.org/RISapp/files/RISrep/PE881RIS.pdf"
+    ]
+  },
+  {
+    "number": 44,
+    "id": "dust",
+    "heightMetres": 4000,
+    "heightMeaning": "WITHIN OBSERVED SAHARAN AIR LAYER",
+    "question": "Can desert dust fly across an ocean?",
+    "answer": "Saharan dust often travels in a layer about 1,500–6,000 m above the sea. Winds can carry it all the way across the Atlantic Ocean.",
+    "sources": [
+      "https://www.nesdis.noaa.gov/news/saharan-dust-blows-across-the-atlantic"
+    ]
+  },
+  {
+    "number": 45,
+    "id": "spider",
+    "heightMetres": 4500,
+    "heightMeaning": "REPORTED AERIAL CAPTURE ALTITUDE ABOVE SEA LEVEL",
+    "question": "Can a spider fly higher than a mountain?",
+    "answer": "Spiders have been found about 4,500 m above the sea. They let out silk threads and ride the moving air like tiny balloon travellers.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6001951/"
+    ]
+  },
+  {
+    "number": 46,
+    "id": "alma",
+    "heightMetres": 5000,
+    "heightMeaning": "OBSERVATORY ELEVATION ABOVE SEA LEVEL",
+    "question": "Why put these giant dishes on a high desert?",
+    "answer": "The ALMA telescopes stand 5,000 m above the sea in Chile. The thin, dry air lets faint light from space reach their giant dishes.",
+    "sources": [
+      "https://www.eso.org/public/images/eso1253b/"
+    ]
+  },
+  {
+    "number": 47,
+    "id": "half-air",
+    "heightMetres": 5500,
+    "heightMeaning": "APPROXIMATE HALF-PRESSURE LEVEL · STANDARD ATMOSPHERE",
+    "question": "Have we already climbed past half the air?",
+    "answer": "At about 5,500 m above the sea, air pressure is roughly half its sea-level value. About half the atmosphere’s weight is already below you.",
+    "sources": [
+      "https://pwg.gsfc.nasa.gov/stargaze/Sweather1.htm"
+    ]
+  },
+  {
+    "number": 48,
+    "id": "chimborazo",
+    "heightMetres": 6263,
+    "heightMeaning": "SUMMIT ELEVATION ABOVE SEA LEVEL",
+    "question": "Which mountaintop is farthest from Earth’s middle?",
+    "answer": "Chimborazo rises 6,263 m above the sea. Earth bulges around its middle, giving this Ecuadorian summit a head start that puts it farther from Earth’s centre than Everest.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/highestpoint.html?ccms_cs=1"
+    ]
+  },
+  {
+    "number": 49,
+    "id": "mouse",
+    "heightMetres": 6739,
+    "heightMeaning": "LIVE-CAPTURE ELEVATION ABOVE SEA LEVEL",
+    "question": "Can a mouse live this high?",
+    "answer": "Scientists caught a live leaf-eared mouse on a volcano 6,739 m above the sea. This tiny mammal was living where the air is thin and the ground is freezing.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10652914/"
+    ]
+  },
+  {
+    "number": 50,
+    "id": "death-zone",
+    "heightMetres": 8000,
+    "heightMeaning": "APPROXIMATE HIGH-ALTITUDE PHYSIOLOGICAL ZONE",
+    "question": "Why is it so hard to breathe up here?",
+    "answer": "Above about 8,000 m, each breath brings in very little oxygen. Climbers call this the death zone because the human body cannot stay healthy here for long.",
+    "sources": [
+      "https://ntrs.nasa.gov/citations/20040090102"
+    ]
+  },
+  {
+    "number": 51,
+    "id": "bacteria",
+    "heightMetres": 8500,
+    "heightMeaning": "WITHIN AIRCRAFT SAMPLING RANGE · 8–15 km ABOVE SEA LEVEL",
+    "question": "Are tiny living things floating this high?",
+    "answer": "Scientists flying about 8,000–15,000 m above the sea found bacteria in the air. These tiny living passengers had travelled far above the ground.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3574924/"
+    ]
+  },
+  {
+    "number": 52,
+    "id": "helicopter",
+    "heightMetres": 8849,
+    "heightMeaning": "SUMMIT LANDING · CURRENT ROUNDED SUMMIT ELEVATION",
+    "question": "Could a helicopter land on the top of Everest?",
+    "answer": "In 2005, Didier Delsalle landed a helicopter on Everest’s summit, about 8,849 m above the sea. Its spinning blades lifted it through the thin mountain air.",
+    "sources": [
+      "https://www.airbus.com/en/newsroom/press-releases/2017-03-airbus-h125-helicopters-operating-on-the-roof-of-the-world"
+    ]
+  },
+  {
+    "number": 53,
+    "id": "mach",
+    "heightMetres": 11000,
+    "heightMeaning": "STANDARD-ATMOSPHERE CALCULATION ABOVE SEA LEVEL",
+    "question": "Does sound travel more slowly up here?",
+    "answer": "In the cold air about 11,000 m up, sound travels roughly 295 m each second. Near sea level on a mild day, it travels about 340 m each second.",
+    "sources": [
+      "https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html"
+    ]
+  },
+  {
+    "number": 54,
+    "id": "concorde",
+    "heightMetres": 18000,
+    "heightMeaning": "APPROXIMATE CRUISING ALTITUDE ABOVE SEA LEVEL",
+    "question": "Could a passenger plane fly this high?",
+    "answer": "Concorde carried passengers about 18,000 m above the sea. It flew faster than sound, and the hot air rubbing past made its body grow a little longer.",
+    "sources": [
+      "https://airandspace.si.edu/collection-objects/concorde-fox-alpha-air-france/nasm_A20030139000"
+    ]
+  },
+  {
+    "number": 55,
+    "id": "armstrong",
+    "heightMetres": 19000,
+    "heightMeaning": "APPROXIMATE BODY-TEMPERATURE BOILING THRESHOLD",
+    "question": "Can warm water boil without getting hotter?",
+    "answer": "At about 19,000 m, the air pushes so weakly that exposed water can boil at body temperature. A person needs a sealed, pressurised suit to survive.",
+    "sources": [
+      "https://spinoff.nasa.gov/Spinoff2015/cg_1.html"
+    ]
+  },
+  {
+    "number": 56,
+    "id": "hot-balloon",
+    "heightMetres": 21027,
+    "heightMeaning": "HOT-AIR BALLOON RECORD · ABOVE SEA LEVEL",
+    "question": "How high has a hot-air balloon flown?",
+    "answer": "Vijaypat Singhania reached 21,027 m above the sea in a hot-air balloon in 2005. A burner heated the air inside the balloon to help it rise.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/highest-flight-by-a-hot-air-balloon"
+    ]
+  },
+  {
+    "number": 57,
+    "id": "ozone",
+    "heightMetres": 25000,
+    "heightMeaning": "WITHIN THE OZONE-RICH STRATOSPHERE",
+    "question": "What protects us from the Sun up here?",
+    "answer": "Much of Earth’s ozone lies about 15–35 km above the ground. This gas soaks up harmful rays from the Sun, helping protect life below.",
+    "sources": [
+      "https://science.nasa.gov/wp-content/uploads/2024/09/final-20qs-2022-full-document-26april2023-digital-version.pdf"
+    ]
+  },
+  {
+    "number": 58,
+    "id": "mars-air",
+    "heightMetres": 35000,
+    "heightMeaning": "APPROXIMATE STANDARD-ATMOSPHERE PRESSURE COMPARISON",
+    "question": "Is the air here as thin as the air on Mars?",
+    "answer": "Around 35,000 m above Earth, air pressure is roughly like it is at the surface of Mars. This real Mars recording lets you hear a helicopter in that thin air.",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    ]
+  },
+  {
+    "number": 59,
+    "id": "skydiver",
+    "heightMetres": 41422,
+    "heightMeaning": "PARACHUTE EXIT ALTITUDE ABOVE SEA LEVEL · 2014",
+    "question": "How high did Alan Eustace jump from?",
+    "answer": "In 2014, Alan Eustace rose by balloon to 41,422 m above the sea. Wearing a special pressure suit, he let go and parachuted back to Earth.",
+    "sources": [
+      "https://www.fai.org/news/commemorating-air-sports-and-spaceflight-records-and-achievements-2024"
+    ]
+  },
+  {
+    "number": 60,
+    "id": "record-balloon",
+    "heightMetres": 53700,
+    "heightMeaning": "RESEARCH BALLOON ALTITUDE ABOVE SEA LEVEL · 2013",
+    "question": "Can a balloon climb higher than a jet?",
+    "answer": "A Japanese research balloon reached 53,700 m above the sea in 2013. Its skin was much thinner than a sheet of paper.",
+    "sources": [
+      "https://www.isas.jaxa.jp/e/forefront/2014/saito/03.shtml"
+    ]
+  },
+  {
+    "number": 61,
+    "id": "tonga",
+    "heightMetres": 57000,
+    "heightMeaning": "MEASURED PLUME-TOP ELEVATION ABOVE SEA LEVEL",
+    "question": "How high can a volcano throw its cloud?",
+    "answer": "Tonga’s huge eruption in 2022 sent a plume about 57,000 m above the sea. Scientists measured it using pictures from weather satellites.",
+    "sources": [
+      "https://www.ox.ac.uk/news/2022-11-04-tonga-volcano-had-highest-plume-ever-recorded-new-study-confirms"
+    ]
+  },
+  {
+    "number": 62,
+    "id": "space-dust",
+    "heightMetres": 70000,
+    "heightMeaning": "WITHIN TYPICAL METEOR-GLOW ALTITUDES · 50–80 km",
+    "question": "Why do shooting stars glow?",
+    "answer": "Most meteors glow about 50–80 km above the ground. Bits of space rock rush into the air so fast that the rock and nearby air heat up and shine.",
+    "sources": [
+      "https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2021/"
+    ]
+  },
+  {
+    "number": 63,
+    "id": "space-line",
+    "heightMetres": 80467,
+    "heightMeaning": "US 50-MILE RECOGNITION THRESHOLD",
+    "question": "Have we reached space yet?",
+    "answer": "At about 80,467 m, you have climbed 50 miles. The United States uses that height to recognise space travellers; another widely used space boundary is 100 km.",
+    "sources": [
+      "https://www.faa.gov/space/human_spaceflight/recognition"
+    ]
+  },
+  {
+    "number": 64,
+    "id": "mesopause",
+    "heightMetres": 85000,
+    "heightMeaning": "APPROXIMATE POLAR MESOSPHERIC CLOUD ALTITUDE",
+    "question": "Can a cloud glow after sunset?",
+    "answer": "Tiny ice clouds form around 85,000 m above the ground. They can still catch sunlight after the land below has gone dark.",
+    "sources": [
+      "https://science.nasa.gov/earth/earth-observatory/high-dry-and-rare-in-the-sky-148502/"
+    ]
+  },
+  {
+    "number": 65,
+    "id": "laser",
+    "heightMetres": 90000,
+    "heightMeaning": "APPROXIMATE SODIUM-LAYER ALTITUDE",
+    "question": "How can a telescope make a star?",
+    "answer": "About 90,000 m up, there is a thin layer of sodium atoms. A telescope’s laser makes them glow, creating a guide star that helps sharpen its view.",
+    "sources": [
+      "https://www.eso.org/public/blog/making-lgs-even-brighter/"
+    ]
+  },
+  {
+    "number": 66,
+    "id": "e12",
+    "heightMetres": 100000,
+    "heightMeaning": "GRAVITY CALCULATED 100 km ABOVE EARTH",
+    "question": "Has gravity disappeared?",
+    "answer": "Even 100 km up, Earth’s pull is about 97% as strong as at the ground. Astronauts float in orbit because they and their spacecraft are falling around Earth together.",
+    "sources": [
+      "https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/"
+    ]
+  }
+]
