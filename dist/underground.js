@@ -1,4 +1,4 @@
-// Depths are below local ground; illustrative scenes are explicitly labelled.
+// A composite depth tour: ocean, local ground and modelled Earth interior.
 const SKY_STOPS=STOPS.slice();
 const SURFACE_STOP=SKY_STOPS[0];
 const UNDERGROUND_STOPS=[
@@ -16,7 +16,9 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Surface rain · listening illustration"
+    "soundCaption": "Surface rain \u00b7 listening illustration",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-worm",
@@ -32,7 +34,9 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Surface rain · no worm sound effect"
+    "soundCaption": "Surface rain \u00b7 no worm sound effect",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-cicada",
@@ -48,23 +52,27 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Adult cicadas above ground · listening example"
+    "soundCaption": "Adult cicadas above ground \u00b7 listening example",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-metro",
     "h": -25,
     "title": "Is that a train beneath your feet?",
-    "text": "London opened the world’s first underground railway in 1863. Today, electric trains turn tunnels into busy streets beneath the city. Listen to a real Tube train arriving.",
+    "text": "London opened the world\u2019s first underground railway in 1863. Today, electric trains turn tunnels into busy streets beneath the city. Listen to a real Tube train arriving.",
     "sprite": 3,
     "source": "https://foi.tfl.gov.uk/FOI-0773-2324/TUBE160%20Heritage%20Leaflet.pdf",
     "trail": "Leave the platforms behind. Water has its own routes.",
-    "listening": "A London Underground train arriving and opening its doors. This depth illustrates a tunnel, not that recording’s measured location.",
+    "listening": "A London Underground train arriving and opening its doors. This depth illustrates a tunnel, not that recording\u2019s measured location.",
     "art": "underground-atlas",
     "underground": true,
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Real London Underground train arrival"
+    "soundCaption": "Real London Underground train arrival",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-aquifer",
@@ -80,7 +88,9 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Quiet · water in pores and cracks"
+    "soundCaption": "Quiet \u00b7 water in pores and cracks",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-cave",
@@ -96,7 +106,9 @@ const UNDERGROUND_STOPS=[
     "underground": true,
     "motion": "still",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Real cave drips · Treak Cliff Cavern"
+    "soundCaption": "Real cave drips \u00b7 Treak Cliff Cavern",
+    "datum": "below local ground",
+    "environment": "ground"
   },
   {
     "id": "under-echo",
@@ -112,7 +124,45 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Real cave reflections · Treak Cliff Cavern"
+    "soundCaption": "Real cave reflections \u00b7 Treak Cliff Cavern",
+    "datum": "below local ground",
+    "environment": "ground"
+  },
+  {
+    "id": "under-twilight",
+    "h": -200,
+    "title": "Where does daylight start to fade?",
+    "text": "Below about 200 m, the ocean enters its twilight zone. There is still a little sunlight, but not enough for photosynthesis. This is a depth tour of different places, not one shaft beneath the city.",
+    "source": "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate zone boundary",
+    "art": "depth-twilight",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-snow",
+    "h": -500,
+    "title": "It snows down here. But it is not ice.",
+    "text": "Marine snow is a slow shower of organic debris from above. In the deep ocean, those sinking scraps help feed animals far from the sun.",
+    "source": "https://oceanexplorer.noaa.gov/explainers/marine-life/",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Illustrative depth",
+    "art": "depth-snow",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
   },
   {
     "id": "under-crystals",
@@ -128,7 +178,45 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Illustrative depth",
-    "soundCaption": "Cave-drip ambience · crystals are quiet"
+    "soundCaption": "Cave-drip ambience \u00b7 crystals are quiet",
+    "datum": "below local ground",
+    "environment": "ground"
+  },
+  {
+    "id": "under-midnight",
+    "h": -1000,
+    "title": "What happens when the sun disappears?",
+    "text": "The midnight zone begins around 1,000 m. Sunlight no longer reaches these waters. A submarine needs its own lights to reveal the world outside.",
+    "source": "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate zone boundary",
+    "art": "depth-midnight",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-vents",
+    "h": -2500,
+    "title": "Can a food chain run without sunshine?",
+    "text": "Around hydrothermal vents, microbes use chemical energy to make food. Hot water emerges through the seafloor, supporting communities in the darkness. Vent depths vary.",
+    "source": "https://oceanservice.noaa.gov/facts/vents.html",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Illustrative depth",
+    "art": "depth-vents",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
   },
   {
     "id": "under-microbes",
@@ -137,7 +225,7 @@ const UNDERGROUND_STOPS=[
     "text": "Researchers found a bacterial community in water 2.8 km down in a South African gold mine. Its energy supply came from rock-driven chemistry, rather than sunlight at the surface.",
     "sprite": 7,
     "source": "https://www.princeton.edu/news/2006/10/20/two-miles-underground-strange-bacteria-are-found-thriving",
-    "trail": "Our deepest drill hole is still inside Earth’s outer skin.",
+    "trail": "Our deepest drill hole is still inside Earth\u2019s outer skin.",
     "measured": true,
     "listening": "Quiet. No invented voice for microscopic life.",
     "art": "underground-atlas",
@@ -145,16 +233,108 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Measured depth",
-    "soundCaption": "Quiet · microscopic life"
+    "soundCaption": "Quiet \u00b7 microscopic life",
+    "datum": "below local ground",
+    "environment": "ground"
+  },
+  {
+    "id": "under-titanic",
+    "h": -3800,
+    "title": "A ship, resting in the dark.",
+    "text": "The wreck of Titanic lies about 3,800 m beneath the North Atlantic. Discovered in 1985, it is a maritime memorial as well as a window into history.",
+    "source": "https://www.noaa.gov/office-of-general-counsel/gc-international-section/rms-titanic-history-and-significance",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate wreck depth",
+    "art": "depth-titanic",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-abyss",
+    "h": -4000,
+    "title": "Welcome to the abyss.",
+    "text": "At around 4,000 m, the abyssal zone begins. Much of the deep seafloor lies in this cold, dark realm. The deepest trenches still lie below.",
+    "source": "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate zone boundary",
+    "art": "depth-abyss",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-hadal",
+    "h": -6000,
+    "title": "There is a world below the abyss.",
+    "text": "Below roughly 6,000 m lies the hadal zone, named after Hades. Its trenches are narrow, deep features rather than a continuous layer covering the whole ocean floor.",
+    "source": "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate zone boundary",
+    "art": "depth-hadal",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-snailfish",
+    "h": -8336,
+    "title": "A little fish with an enormous record.",
+    "text": "In 2022, cameras filmed a snailfish 8,336 m down in the Izu-Ogasawara Trench near Japan. Its pale, delicate body belongs in a place that would crush ordinary equipment.",
+    "source": "https://www.uwa.edu.au/news/Article/2023/April/Scientists-break-new-record-after-finding-worlds-deepest-fish",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Recorded observation",
+    "art": "depth-snailfish",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-mariana",
+    "h": -10935,
+    "title": "The deepest known ocean floor.",
+    "text": "Challenger Deep, in the Mariana Trench, reaches approximately 10,935 m below sea level. Put Mount Everest here and its summit would still be more than two kilometres underwater.",
+    "source": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+    "environment": "ocean",
+    "datum": "below sea level",
+    "depthNote": "Approximate measured depth",
+    "art": "depth-mariana",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "The ocean ends at the seafloor. Our depth tour continues through other places on Earth.",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
   },
   {
     "id": "under-borehole",
     "h": -12262,
     "title": "How far have we drilled straight down?",
-    "text": "The Kola Superdeep Borehole reached 12,262 m. Even there, the drill was still in Earth’s crust. It reached only about a third of the way through the crust at that location.",
+    "text": "The Kola Superdeep Borehole reached 12,262 m. Even there, the drill was still in Earth\u2019s crust. It reached only about a third of the way through the crust at that location.",
     "sprite": 8,
     "source": "https://www.earthdate.org/episodes/kola-superdeep",
-    "trail": "",
+    "trail": "We have reached the limit of vertical drilling. The rest is a scientific reconstruction.",
     "measured": true,
     "listening": "Quiet. There is no authenticated recording here from the bottom of this borehole.",
     "art": "underground-atlas",
@@ -162,9 +342,122 @@ const UNDERGROUND_STOPS=[
     "motion": "still",
     "gesture": "",
     "depthNote": "Measured depth",
-    "soundCaption": "Quiet · no verified bottom-of-borehole recording"
+    "soundCaption": "Quiet \u00b7 no verified bottom-of-borehole recording",
+    "datum": "below local ground",
+    "environment": "ground"
+  },
+  {
+    "id": "under-crust",
+    "h": -35000,
+    "title": "We have left the drill behind.",
+    "text": "No borehole reaches this far. Beneath continents, the crust is commonly tens of kilometres thick. Its lower boundary varies greatly; this 35 km stop is an illustration, not a worldwide floor.",
+    "source": "https://pubs.usgs.gov/gip/interior/",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Illustrative crust boundary",
+    "art": "depth-crust",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "Beyond the reach of drills, earthquake waves reveal the way.",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-mantle",
+    "h": -150000,
+    "title": "Solid rock that can slowly flow.",
+    "text": "The mantle is mostly solid, not a giant ocean of magma. Over immense spans of time, hot rock can deform and flow. Here our journey follows scientific evidence rather than a tunnel.",
+    "source": "https://www.usgs.gov/faqs/are-tectonic-plates-floating-magma",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Illustrative mantle depth",
+    "art": "depth-mantle",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-deep-mantle",
+    "h": -1000000,
+    "title": "How do we see through a planet?",
+    "text": "Earthquake waves travel differently through different materials. Their paths and arrival times let scientists investigate layers that no person or drill has ever reached.",
+    "source": "https://www.usgs.gov/publications/interior-earth-elementary-description",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Illustrative mantle depth",
+    "art": "depth-deep-mantle",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-outer-core",
+    "h": -2900000,
+    "title": "Here, the metal becomes liquid.",
+    "text": "About 2,900 km down, the rocky mantle gives way to the outer core. This layer is liquid metal, mostly iron. It is very different from the solid rock above.",
+    "source": "https://pubs.usgs.gov/gip/interior/",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Approximate layer boundary",
+    "art": "depth-outer-core",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-inner-core",
+    "h": -5150000,
+    "title": "A solid heart inside liquid metal.",
+    "text": "Around 5,150 km down, we reach the inner core. Despite the immense heat, enormous pressure keeps this iron-rich inner region solid.",
+    "source": "https://pubs.usgs.gov/gip/interior/",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Approximate layer boundary",
+    "art": "depth-inner-core",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
+  },
+  {
+    "id": "under-centre",
+    "h": -6371000,
+    "title": "Every direction leads back up.",
+    "text": "We have reached the centre in our imagined journey: about 6,371 km beneath the mean surface. The ocean trenches and deepest boreholes occupy only a tiny fraction of that distance.",
+    "source": "https://science.nasa.gov/earth/facts/",
+    "environment": "interior",
+    "datum": "below Earth\u2019s surface",
+    "depthNote": "Approximate mean Earth radius",
+    "art": "depth-centre",
+    "diagram": true,
+    "underground": true,
+    "motion": "still",
+    "gesture": "",
+    "trail": "",
+    "listening": "Quiet exhibit. No recording from this depth is available in this journey.",
+    "soundCaption": "Quiet exhibit \u00b7 no recording from this depth"
   }
 ];
 STOPS.unshift(...UNDERGROUND_STOPS.slice().reverse());
 let BOTTOM=0;
-ASSETS['underground-atlas']='images/underground-atlas.png';
+ASSETS["underground-atlas"]="images/underground-atlas.png";
+UNDERGROUND_STOPS.filter(s=>s.diagram).forEach(s=>ASSETS[s.art]="images/"+s.art+".svg");
+
+UNDERGROUND_STOPS.filter(s=>["under-twilight","under-snow","under-midnight"].includes(s.id)).forEach(s=>{s.listening="NOAA blue whale recording from the northeast Pacific, at original speed. A listening example, not a recording from this displayed depth.";s.soundCaption="Real blue whale recording / ocean listening example";});

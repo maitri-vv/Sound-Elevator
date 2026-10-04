@@ -33,3 +33,14 @@ body:not(.underground) #underground-backdrop *{animation-play-state:paused}
 
 .underground-stop[data-gesture=mist] .art-atmosphere{inset:5% 12%;border-radius:50%;mask-image:radial-gradient(ellipse,#000 20%,transparent 68%)}
 @media(max-width:650px){.underground-stop .art-frame{height:225px}.stop.underground-stop .art-depth{width:225px}.underground-stop .fact-copy{font-size:17px;line-height:1.45}.underground-stop .narrative h2{font-size:27px}}
+
+.stop.depth-diagram .object .art-image{width:100%;height:100%;left:0;top:0;object-fit:contain}
+body[data-depth-environment=ocean] #underground-backdrop{background:linear-gradient(#082d41,#030e1e)}
+body[data-depth-environment=ocean] .rock-strata{opacity:0}
+body[data-depth-environment=ocean] .seeping-water{background:radial-gradient(circle,#a8e4e8 1px,transparent 2px) 0 0/93px 117px;opacity:.3;mask-image:none}
+body[data-depth-environment=interior] #underground-backdrop{background:radial-gradient(ellipse at bottom,#71351f,#251c24 75%)}
+body[data-depth-environment=interior] .seeping-water{display:none}
+#underground-backdrop{transition:background 1s}
+
+.stop.depth-diagram .art-depth{clip-path:none}
+@media(max-width:650px){.underground-stop .depth-note{letter-spacing:.3px;font-size:11px;max-width:220px;margin-inline:auto}.underground .tick{opacity:.3}}

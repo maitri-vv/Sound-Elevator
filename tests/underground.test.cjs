@@ -12,11 +12,11 @@ function route(){
 test('surface is zero, with anchors strictly ordered in both directions',()=>{
  const r=route();assert.equal(r.interpolate(0,'h','p'),0);assert.equal(r.interpolate(0,'p','h'),0);
  for(let i=1;i<r.POINTS.length;i++)assert.ok(r.POINTS[i].p>r.POINTS[i-1].p);
- assert.equal(r.SKY_STOPS.length,66);assert.equal(r.UNDERGROUND_STOPS.length,10);
+ assert.equal(r.SKY_STOPS.length,66);assert.equal(r.UNDERGROUND_STOPS.length,25);
 });
 test('depths round-trip through the signed logarithmic mapping',()=>{
  const r=route();
- for(const h of [-12262,-5000,-2800,-600,-90,-25,-2,-.25,-.01,.18,3,300,8849,100000]){
+ for(const h of [-6371000,-5150000,-2900000,-1000000,-35000,-10935,-8336,-12262,-5000,-2800,-600,-90,-25,-2,-.25,-.01,.18,3,300,8849,100000]){
   const result=r.interpolate(r.interpolate(h,'h','p'),'p','h');
   assert.ok(Math.abs(result-h)<.000001,`${h} became ${result}`);
  }
@@ -29,5 +29,5 @@ test('scrolling down crosses the surface continuously and reaches every undergro
 });
 test('underground content has unique IDs, source links, depth labels and valid sprite cells',()=>{
  const r=route();assert.equal(new Set(r.STOPS.map(s=>s.id)).size,r.STOPS.length);
- for(const s of r.UNDERGROUND_STOPS){assert.match(s.source,/^https:\/\//);assert.ok(s.depthNote);assert.ok(s.listening);assert.ok(s.sprite>=0&&s.sprite<=8);}
+ for(const s of r.UNDERGROUND_STOPS){assert.match(s.source,/^https:\/\//);assert.ok(s.depthNote);assert.ok(s.listening);assert.ok(s.datum);assert.ok(s.diagram||s.sprite>=0&&s.sprite<=8);assert.ok(fs.existsSync(path.join(__dirname,"../dist/images",s.diagram?s.art+".svg":"underground-atlas.png")));}
 });

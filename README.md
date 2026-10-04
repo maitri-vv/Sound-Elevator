@@ -12,7 +12,7 @@
 
 Sound Elevator is an interactive journey above and below the surface, told through watercolor illustrations, real recordings, and little discoveries about the world above us.
 
-Scroll up past the rooftops and clouds, or down through roots, tunnels, caves, and deep rock. Hear real recordings and discover the hidden world around you. Slide a window, brush away mist, and linger wherever curiosity takes you.
+Scroll up past the rooftops and clouds, or down through roots, tunnels, caves, ocean trenches, and deep rock to Earth’s core. Hear real recordings and discover the hidden world around you. Slide a window, brush away mist, and linger wherever curiosity takes you.
 
 **Headphones on. Sound on. Going up.**
 
