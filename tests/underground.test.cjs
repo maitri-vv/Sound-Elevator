@@ -29,5 +29,11 @@ test('scrolling down crosses the surface continuously and reaches every undergro
 });
 test('underground content has unique IDs, source links, depth labels and valid sprite cells',()=>{
  const r=route();assert.equal(new Set(r.STOPS.map(s=>s.id)).size,r.STOPS.length);
- for(const s of r.UNDERGROUND_STOPS){assert.match(s.source,/^https:\/\//);assert.ok(s.depthNote);assert.ok(s.listening);assert.ok(s.datum);assert.ok(s.diagram||s.sprite>=0&&s.sprite<=8);assert.ok(fs.existsSync(path.join(__dirname,"../dist/images",s.diagram?s.art+".svg":"underground-atlas.png")));}
+ for(const s of r.UNDERGROUND_STOPS){assert.match(s.source,/^https:\/\//);assert.ok(s.depthNote);assert.ok(s.listening);assert.ok(s.datum);assert.ok(s.illustration||s.sprite>=0&&s.sprite<=8);assert.ok(fs.existsSync(path.join(__dirname,"../dist/images",s.illustration?s.art+".png":"underground-atlas.png")));}
+});
+
+test('every underground discovery uses a distinct illustration or atlas cell',()=>{
+ const r=route();
+ const pictures=r.UNDERGROUND_STOPS.map(s=>s.illustration?s.art:s.art+':'+s.sprite);
+ assert.equal(new Set(pictures).size,pictures.length);
 });

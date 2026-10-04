@@ -49,6 +49,6 @@ context('under-metro','underground-train','Real London Underground train arrivin
 context('under-cave under-echo under-crystals','cave-drips','Real water drips in Treak Cliff Cavern, England; illustrative scene depths',.28);
 quiet('under-aquifer under-microbes under-borehole','Quiet scene: no unsupported underground recording substituted');
 
-UNDERGROUND_STOPS.filter(s=>s.diagram).forEach(s=>quiet(s.id,s.listening));
+UNDERGROUND_STOPS.filter(s=>s.illustration&&s.id!=="under-echo").forEach(s=>quiet(s.id,s.listening));
 
 context("under-twilight under-snow under-midnight","whale","NOAA blue whale recording from the northeast Pacific; ocean listening example, not recorded at the displayed depth",.20);

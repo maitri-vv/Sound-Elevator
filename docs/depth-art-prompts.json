@@ -1,0 +1,70 @@
+{
+  "mode": "Built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "path": "dist/images/depth-twilight.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Ocean twilight zone: silvery fish silhouettes beneath descending soft sunbeams, delicate blue water vignette, no seabed. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-snow.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Marine snow: close view of sinking organic specks, tiny translucent plankton and a delicate transparent sea cucumber in deep blue water; not snowflakes. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-midnight.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. A small yellow scientific submersible with a spherical window and two lights illuminating dark blue water. No fish, no seabed. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-vents.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Black smoker hydrothermal chimney cluster, dark mineral-rich plumes with white and red tube worms around the rocky base. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-titanic.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Respectful underwater illustration of the Titanic wreck's rust-covered broken bow resting on pale seabed, railing and anchor detail, no intact sailing ship, no people. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-abyss.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Broad flat abyssal seabed with a sea cucumber, brittle star and delicate stalked sponge. Low perspective, no trench or mountains. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-hadal.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Steep folded rock walls descending into a narrow hadal ocean canyon, viewed obliquely, tiny pale amphipods near one ledge. No submarine. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-snailfish.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. One pale translucent pink deep-sea snailfish, big head tapering into a slender tail, small black eyes, fanlike pectoral fins, anatomically plausible, no scenery. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-mariana.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Challenger Deep ocean exploration: an orange scientific lander with glass instrument spheres standing on the pale silty bottom of the Mariana Trench, distant steep blue walls and tiny sediment cloud. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-crust.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Geological crust illustration: a thick irregular cutaway slab with tiny mountain peaks above layered granite and basalt, varied mineral textures, the bottom revealing darker mantle rock. Not a globe. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-mantle.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Scientific conceptual illustration of solid hot mantle rock deforming in slow broad folded bands: an isolated chunk of dense olive and ochre rock with subtle reddish heat deep inside, no liquid lava ocean. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-deep-mantle.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Scientific conceptual cutaway Earth hemisphere with fine curved seismic ray paths travelling through mantle and core; hand-painted geological layers, ocean blue curved exterior. No labels. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-outer-core.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Scientific conceptual wedge cutaway revealing flowing copper-orange liquid metal deep inside Earth, swirling metallic texture enclosed by dark mantle above, no surface volcano, no whole globe. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-inner-core.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Scientific conceptual inner core: solid glowing pale gold iron sphere revealed inside an open cupped shell of orange liquid outer core, textured hand-painted metallic material. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-centre.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Scientific conceptual Earth centre: intimate close-up of a dense golden iron crystalline sphere, concentric warm mineral texture converging on a tiny bright central point, dark amber outer rim; no Earth globe or shell. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    },
+    {
+      "path": "dist/images/depth-echo.png",
+      "prompt": "Create a single standalone illustration for Sound Elevator, an educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. A tall cathedral-like limestone cavern with an explorer in a tiny orange helmet for scale, long receding chambers and subtle pale curved echo ripples in the air. No pool, no foreground stalagmite cluster. Centered complete subject in a square composition with generous 10% transparent margin. Real transparent background outside the vignette. Readable at 240px. No text, labels, letters, border, infographic symbols, grid, multiple panels or repeated objects. This is one distinct scene, not an atlas."
+    }
+  ]
+}
