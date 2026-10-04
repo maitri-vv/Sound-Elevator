@@ -1,0 +1,35 @@
+/* A continuous rock world beneath the surface, with no interactive overlay. */
+#underground-backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;opacity:0;background:linear-gradient(#272e34,#342d2b);contain:paint}
+.rock-strata{position:absolute;inset:-400px -10%;transform:translateY(var(--rock-shift,0px));background:repeating-linear-gradient(174deg,transparent 0 95px,#d4af7520 96px 98px,transparent 100px 155px,#151b2444 156px 195px),repeating-linear-gradient(84deg,transparent 0 235px,#c4b8980b 236px 237px,transparent 240px 410px);opacity:.8}
+.cave-light{position:absolute;inset:0;background:radial-gradient(ellipse at 10% 50%,#edc78920,transparent 38%),radial-gradient(ellipse at 85% 65%,#4e829e20,transparent 45%)}
+.cave-light:after{content:'';position:absolute;inset:0;opacity:var(--deep-glow,0);background:radial-gradient(ellipse at 50% 100%,#b8632820,transparent 65%)}
+.seeping-water{position:absolute;inset:0;opacity:.16;background:repeating-linear-gradient(92deg,transparent 0 17vw,#8cb9ca50 17.1vw 17.15vw,transparent 17.2vw 39vw);mask-image:linear-gradient(transparent,#000 40%,transparent 70%);animation:cave-seep 18s ease-in-out infinite alternate}
+body:not(.underground) #underground-backdrop *{animation-play-state:paused}
+@keyframes cave-seep{to{transform:translateY(38px);opacity:.08}}
+.surface-gap{display:none}
+.stop.underground-stop .art-depth{width:320px;height:auto;aspect-ratio:1;max-width:100%;margin:auto;overflow:hidden;clip-path:inset(3% 3% 5%);position:relative;transform:none}
+.stop.underground-stop .object .art-image{position:absolute;width:300%;height:300%;max-width:none;left:calc(var(--sprite-x)*-100%);top:calc(var(--sprite-y)*-100%);object-fit:fill;filter:none;transform:none;animation:none}
+.depth-note{display:block;font:12px/1.4 'Barlow Condensed',sans-serif;letter-spacing:.6px;opacity:.7;margin-top:8px}
+.underground-listening{font:14px/1.4 'Barlow Condensed',sans-serif;opacity:.7;margin:18px 0 7px}
+.underground-source{color:inherit;font:13px 'Barlow Condensed',sans-serif;text-underline-offset:3px;opacity:.7}
+.underground #home,.underground .volume,.underground .cabin span,.underground .credits-link,.underground .tick{color:#ecdfcc}
+.underground .rail{background:#e9cf9955;box-shadow:7px 0 0 #ffffff15}
+.underground .progress i{background:#ddbd89}
+#depth-readout{display:block;font:13px 'Barlow Condensed',sans-serif;margin-top:7px;color:inherit}
+#depth-readout[hidden],.atmosphere-details[hidden]{display:none!important}
+.deep-finish{position:absolute;bottom:190px;left:15%;right:10%;min-height:350px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#f2e4ce}
+.deep-finish h2{font:44px/1.1 'Patrick Hand',cursive;margin:20px 0}
+.deep-finish p{font-size:20px;line-height:1.5}.deep-finish button{background:#ead5b71a;color:inherit;border-color:#dec8a4aa}
+.intro .hint{line-height:1.7}
+@media(max-width:650px){
+ .stop.underground-stop .art-depth{width:245px;height:auto}
+ .underground-stop .object figcaption{flex-direction:column;gap:2px}
+ .underground-listening{font-size:13px;margin-top:13px}
+ .underground-stop .narrative h2{font-size:28px}
+ .deep-finish{left:20%;right:8%;bottom:200px}.deep-finish h2{font-size:32px}.deep-finish p{font-size:17px}
+ .intro .hint{font-size:15px;margin:12px 0}
+}
+@media(prefers-reduced-motion:reduce){.seeping-water{animation:none}.rock-strata{transform:none}}
+
+.underground-stop[data-gesture=mist] .art-atmosphere{inset:5% 12%;border-radius:50%;mask-image:radial-gradient(ellipse,#000 20%,transparent 68%)}
+@media(max-width:650px){.underground-stop .art-frame{height:225px}.stop.underground-stop .art-depth{width:225px}.underground-stop .fact-copy{font-size:17px;line-height:1.45}.underground-stop .narrative h2{font-size:27px}}

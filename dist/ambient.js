@@ -28,6 +28,8 @@ class AmbientSky {
   document.addEventListener('visibilitychange',visibility);visibility();
  }
  update(height,position){
+  this.root.hidden=height<0;
+  if(height<0){for(const {el} of this.layers)el.classList.remove('is-active');return;}
   const clamp=n=>Math.max(0,Math.min(1,n));
   for(const {el,start,enter,leave,end} of this.layers){
    const amount=(enter===start?1:clamp((height-start)/(enter-start)))*(1-clamp((height-leave)/(end-leave)));

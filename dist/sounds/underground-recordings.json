@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cave-drips",
+    "title": "Water drips in Treak Cliff Cavern, Derbyshire.flac",
+    "artist": "Andy Mabbett",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Water_drips_in_Treak_Cliff_Cavern%2C_Derbyshire.flac",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Water_drips_in_Treak_Cliff_Cavern%2C_Derbyshire.flac",
+    "local": "sounds/cave-drips.mp3",
+    "changes": "First 24 seconds; converted to mono MP3, loudness normalized, short edge fades. No pitch or speed change. This adaptation retains the source license."
+  },
+  {
+    "id": "underground-train",
+    "title": "London Underground 1996 Stock train arriving in a station.ogg",
+    "artist": "Philt3r",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:London_Underground_1996_Stock_train_arriving_in_a_station.ogg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/London_Underground_1996_Stock_train_arriving_in_a_station.ogg",
+    "local": "sounds/underground-train.mp3",
+    "changes": "First 9.5 seconds; converted to mono MP3, loudness normalized, short edge fades. No pitch or speed change. This adaptation retains the source license."
+  }
+]

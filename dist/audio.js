@@ -9,7 +9,7 @@ class SoundWorld {
   }
   return this.recordings.get(track);
  }
- constructor(h=0,p=0,current=STOPS[0]){
+ constructor(h=0,p=0,current=STOPS.find(s=>s.h===0)||STOPS[0]){
   const c=this.ctx=new(window.AudioContext||window.webkitAudioContext)();
   this.master=c.createGain();this.master.gain.value=0;
   const limiter=c.createDynamicsCompressor();limiter.threshold.value=-12;limiter.ratio.value=8;
@@ -61,7 +61,7 @@ class SoundWorld {
    const attenuation=1;
    const opening=s.gesture==='window'?(s.open??1):1;
    const level=a.gain*envelope*attenuation*(.08+.92*opening)*(1+(s.energy||0)*.12);
-   const cutoff=(800+12500*attenuation)*(.07+.93*opening);
+   const cutoff=(a.cutoff||(800+12500*attenuation))*(.07+.93*opening);
    if(a.mode==='once'&&envelope<.1)this.played.delete(s.id);
    if(a.mode==='once'&&this.enabled&&envelope>.8&&this.layers.has(a.track)&&!this.played.has(s.id)){
     const layer=this.layers.get(a.track),shot=this.ctx.createBufferSource();shot.buffer=layer.buffer;shot.connect(layer.filter);shot.start();this.oneShots.add(shot);this.played.set(s.id,this.ctx.currentTime);shot.onended=()=>{this.oneShots.delete(shot);shot.disconnect()};

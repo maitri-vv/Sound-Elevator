@@ -1803,11 +1803,20 @@ let BAND_LENGTH=13000, TOP=950+5*BAND_LENGTH+1100, MAX_HEIGHT=100000;
 // Equal-length decade chapters; equal reading space per stop. Heights interpolate logarithmically.
 const POINTS=[{h:0,p:0},...STOPS];
 function interpolate(value,key,out){
- if(value<=0)return 0;
- const last=STOPS.at(-1);if(value>=last[key])return last[out];
- for(let i=1;i<POINTS.length;i++){const a=POINTS[i-1],b=POINTS[i];if(value<=b[key]){
-  if(key==='p'){const t=(value-a.p)/(b.p-a.p);return Math.expm1(Math.log1p(a.h)+t*(Math.log1p(b.h)-Math.log1p(a.h)))}
-  const t=(Math.log1p(value)-Math.log1p(a.h))/(Math.log1p(b.h)-Math.log1p(a.h));return a.p+t*(b.p-a.p);
- }}return last[out];
+ if(key==='h'&&value===0)return 0;
+ const first=POINTS[0],last=POINTS.at(-1);
+ if(value<=first[key])return first[out];
+ if(value>=last[key])return last[out];
+ const scale=h=>Math.sign(h)*Math.log1p(Math.abs(h));
+ const unscale=n=>Math.sign(n)*Math.expm1(Math.abs(n));
+ for(let i=1;i<POINTS.length;i++){
+  const a=POINTS[i-1],b=POINTS[i];
+  if(value<=b[key]){
+   if(key==='p'){const t=(value-a.p)/(b.p-a.p);return unscale(scale(a.h)+t*(scale(b.h)-scale(a.h)))}
+   const range=scale(b.h)-scale(a.h);
+   if(!range)return b.p;
+   const t=(scale(value)-scale(a.h))/range;return a.p+t*(b.p-a.p);
+  }
+ }
+ return last[out];
 }
-

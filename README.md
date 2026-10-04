@@ -2,7 +2,7 @@
 
 <p align="center"><strong>What does the world sound like from up here?</strong></p>
 
-<p align="center">Start in a meadow. Rise past the rooftops. Keep going until the sky becomes space.</p>
+<p align="center">Start at the surface. Rise into the sky, or descend into the world beneath your feet.</p>
 
 <p align="center"><a href="https://soundelevator.vercel.app"><strong>Take the ride →</strong></a></p>
 
@@ -10,9 +10,9 @@
   <img src="dist/images/meadow-background.webp" alt="Watercolor meadow artwork from Sound Elevator, with wildflowers and trees opening onto a pale blue sky" width="100%">
 </a>
 
-Sound Elevator is an interactive journey from the ground to the edge of space, told through watercolor illustrations, real recordings, and little discoveries about the world above us.
+Sound Elevator is an interactive journey above and below the surface, told through watercolor illustrations, real recordings, and little discoveries about the world above us.
 
-Scroll up to climb. Hear singing sand, meet life above the clouds, and watch the atmosphere change as you rise. Slide a window, brush away mist, and linger wherever curiosity takes you.
+Scroll up past the rooftops and clouds, or down through roots, tunnels, caves, and deep rock. Hear real recordings and discover the hidden world around you. Slide a window, brush away mist, and linger wherever curiosity takes you.
 
 **Headphones on. Sound on. Going up.**
 

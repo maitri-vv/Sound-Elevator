@@ -8,3 +8,5 @@ The MIT licence does not replace third-party asset licences.
 - Watercolor illustrations were generated for this project and are stylised educational depictions.
 
 Do not remove attribution when hosting or redistributing the site.
+
+- Underground recordings: `dist/sounds/underground-recordings.json` identifies the cave recording (Andy Mabbett, CC BY-SA 3.0) and London Underground recording (Philt3r, CC BY 4.0). Adapted clips retain their respective source licenses; preserve their attribution and modification notes.

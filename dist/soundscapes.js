@@ -40,3 +40,11 @@ quiet('armstrong','Quiet · no ground-pressure kettle sound used for low-pressur
 context('hot-balloon','burner','Hot-air balloon burner · real recording from a different flight',.20);
 context('mars-air','mars','NASA Ingenuity rotor on Mars · filtered mission recording for the pressure comparison',.24);
 quiet('ozone skydiver record-balloon tonga space-dust space-line mesopause laser e12','Quiet · no invented sounds in the thin upper atmosphere');
+
+// Underground scenes: distinguish field recordings from listening illustrations.
+context('under-roots under-worm','rain','Rain at the surface, filtered as an illustrative soil listening scene',.12);
+SOUNDSCAPES['under-roots'].cutoff=1200;SOUNDSCAPES['under-worm'].cutoff=650;
+context('under-cicada','cicada','Adult cicada recording as a preview of emergence; not an underground nymph sound',.12);
+context('under-metro','underground-train','Real London Underground train arriving; illustrative tunnel depth',.24);
+context('under-cave under-echo under-crystals','cave-drips','Real water drips in Treak Cliff Cavern, England; illustrative scene depths',.28);
+quiet('under-aquifer under-microbes under-borehole','Quiet scene: no unsupported underground recording substituted');
