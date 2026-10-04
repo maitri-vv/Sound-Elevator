@@ -1,0 +1,42 @@
+{
+  "mode": "Built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "path": "dist/images/depth-fossil.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. A spiral ammonite fossil embedded in a broken ochre sedimentary rock slab, fine fossil ribs, a small fern imprint beside it; natural-history specimen. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-derinkuyu.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Cutaway vignette of Derinkuyu underground city: honey-colored volcanic rock containing several connected carved rooms, stairs, ventilation shaft and circular rolling stone door, tiny human explorer for scale, no modern buildings. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-cern.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Curving underground CERN particle accelerator tunnel with blue cylindrical superconducting magnets, silver pipes and cable trays, realistic engineering, no magical visible particle beam. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-vampire.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. One scientifically plausible burgundy vampire squid floating in dark water, rounded mantle, two small fins, large blue eyes, webbed eight arms held partly open like an umbrella and two fine feeding filaments. No teeth or horror imagery. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-giant-squid.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. One elegant reddish giant squid diagonally floating, long tapered mantle, triangular fins, eight shorter arms and two much longer feeding tentacles, large eye, no fighting or boats. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-whale-fall.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. A whale skeleton resting on deep-sea sediment, curved ribs and long vertebral column, tiny crabs and delicate red bone-eating worm plumes on bones, no flesh or gore; entire scene visible. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-brine.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Underwater brine pool on seabed: oval glassy pale turquoise dense salty pool with a distinct rippled boundary, ring of mussels and pale sediment, dark blue surrounding water, no surface sky, no land lake. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-icecube.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Conceptual cutaway of translucent Antarctic ice with vertical strings of spherical glass scientific light sensors frozen deep inside, tiny polar research station at top for scale, faint blue light track within ice. No lettering. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    },
+    {
+      "path": "dist/images/depth-octopus-garden.png",
+      "prompt": "Create one standalone illustration for Sound Elevator educational scrolling website. Hand-painted watercolor and gouache natural-history storybook style, fine ink details, rich textured pigments, softly irregular silhouette. Three pale lavender pearl octopus mothers curled protectively over small clusters of ivory eggs in separate basalt crevices, subtle clear warm-water shimmer, deep-sea nursery, no black smokers or cartoon faces. Square composition, complete subject with generous transparent margins, real transparent background outside vignette. Readable at 240px. No text, labels, letters, border, grid or multiple panels."
+    }
+  ]
+}

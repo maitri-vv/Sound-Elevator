@@ -40,7 +40,11 @@ body[data-depth-environment=ocean] .rock-strata{opacity:0}
 body[data-depth-environment=ocean] .seeping-water{background:radial-gradient(circle,#a8e4e8 1px,transparent 2px) 0 0/93px 117px;opacity:.3;mask-image:none}
 body[data-depth-environment=interior] #underground-backdrop{background:radial-gradient(ellipse at bottom,#71351f,#251c24 75%)}
 body[data-depth-environment=interior] .seeping-water{display:none}
+body[data-depth-environment=ice] #underground-backdrop{background:linear-gradient(#173d53,#0c243c)}
+body[data-depth-environment=ice] .rock-strata{opacity:.25;background:repeating-linear-gradient(176deg,transparent 0 110px,#bcebf522 112px 114px,transparent 117px 190px)}
+body[data-depth-environment=ice] .seeping-water{display:none}
 #underground-backdrop{transition:background 1s}
 
 .stop.depth-illustration .art-depth{clip-path:none}
 @media(max-width:650px){.underground-stop .depth-note{letter-spacing:.3px;font-size:11px;max-width:220px;margin-inline:auto}.underground .tick{opacity:.3}}
+@media(max-width:650px){.underground .journey-nav{left:12px;right:auto}}

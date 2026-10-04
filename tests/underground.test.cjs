@@ -12,7 +12,7 @@ function route(){
 test('surface is zero, with anchors strictly ordered in both directions',()=>{
  const r=route();assert.equal(r.interpolate(0,'h','p'),0);assert.equal(r.interpolate(0,'p','h'),0);
  for(let i=1;i<r.POINTS.length;i++)assert.ok(r.POINTS[i].p>r.POINTS[i-1].p);
- assert.equal(r.SKY_STOPS.length,66);assert.equal(r.UNDERGROUND_STOPS.length,25);
+ assert.equal(r.STOPS.length,100);assert.equal(r.SKY_STOPS.length,66);assert.equal(r.UNDERGROUND_STOPS.length,34);
 });
 test('depths round-trip through the signed logarithmic mapping',()=>{
  const r=route();
@@ -29,6 +29,9 @@ test('scrolling down crosses the surface continuously and reaches every undergro
 });
 test('underground content has unique IDs, source links, depth labels and valid sprite cells',()=>{
  const r=route();assert.equal(new Set(r.STOPS.map(s=>s.id)).size,r.STOPS.length);
+ assert.equal(new Set(r.UNDERGROUND_STOPS.map(s=>s.h)).size,34);
+ const credits=fs.readFileSync(path.join(__dirname,'../dist/credits.html'),'utf8');
+ for(const s of r.UNDERGROUND_STOPS)assert.ok(credits.includes('id="'+s.id+'"'),s.id+' is missing its source section');
  for(const s of r.UNDERGROUND_STOPS){assert.match(s.source,/^https:\/\//);assert.ok(s.depthNote);assert.ok(s.listening);assert.ok(s.datum);assert.ok(s.illustration||s.sprite>=0&&s.sprite<=8);assert.ok(fs.existsSync(path.join(__dirname,"../dist/images",s.illustration?s.art+".png":"underground-atlas.png")));}
 });
 
