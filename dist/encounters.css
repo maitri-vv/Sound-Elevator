@@ -8,21 +8,37 @@
 .cabin[data-reaction=listening] #elevator-art{filter:drop-shadow(0 0 9px #e6ba6866)}
 #elevator-art{transition:transform 1.5s,filter 1.5s}
 .encounter-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.water-ripples{position:absolute;left:var(--sonar-x);top:var(--sonar-y);width:0;height:0}
+.water-ripples i{position:absolute;left:-280px;top:-210px;width:560px;height:420px;border-radius:47% 53% 49% 51%;background:radial-gradient(ellipse,transparent 44%,#b9e3d708 47%,#b6e1d42b 49%,#e4f2d613 50%,transparent 54%);opacity:0;transform:scale(.06);filter:blur(2px)}
+.water-playing .water-ripples i{animation:water-spread 4.5s linear both}
+.water-playing .water-ripples i:nth-child(2){animation-delay:.4s;rotate:12deg}
+.water-playing .water-ripples i:nth-child(3){animation-delay:.8s;rotate:-9deg}
+.ocean-life{position:absolute;inset:0;opacity:0;transition:opacity 1s}
+[data-habitat=ocean] .ocean-life{opacity:1}
+.water-animal{position:absolute;opacity:0;transition:opacity 1.2s;transform-origin:50% 70%;width:95px;pointer-events:none}
+.water-animal img{display:block;width:100%;height:auto;animation:water-swim 13s ease-in-out infinite alternate;filter:drop-shadow(0 4px 10px #00182255)}
+.lantern.one{right:4%;top:23%;width:100px}
+.lantern.two{left:13%;top:69%;width:65px}
+.lantern.two img{scale:-1 1;animation-delay:-7s;animation-duration:17s}
+.jelly{right:3%;top:62%;width:75px}
+.jelly img{animation:water-jelly 11s ease-in-out infinite alternate}
+.coral{right:0;bottom:15%;width:155px;transform-origin:50% 95%}
+.coral img{animation:water-coral 12s ease-in-out infinite alternate;transform-origin:50% 95%}
+.has-lanternfish .lantern{opacity:.68}.has-jelly .jelly{opacity:.55}.has-coral .coral{opacity:.68}
+.curious-visitor{position:absolute;right:8%;top:35%;width:85px;opacity:0;transform:translateX(90px)}
+.curious-visitor img{width:100%;height:auto}
+.visitor-arrived .curious-visitor{animation:visitor-approach 9s ease-in-out both}
+@keyframes water-spread{0%{opacity:0;transform:scale(.06) rotate(-6deg)}12%{opacity:.6}60%{opacity:.25}100%{opacity:0;transform:scale(1.9) rotate(8deg)}}
+@keyframes water-swim{from{transform:translate(0,0) rotate(-3deg)}to{transform:translate(-22px,9px) rotate(3deg)}}
+@keyframes water-jelly{from{transform:translateY(0) scale(1,.98)}to{transform:translateY(-20px) scale(.97,1.02)}}
+@keyframes water-coral{from{transform:rotate(-1.3deg)}to{transform:rotate(1.3deg)}}
+@keyframes water-visitor-fade{0%,100%{opacity:0}30%,65%{opacity:.65}}
+:not(.has-lanternfish)>.ocean-life .lantern img,:not(.has-jelly)>.ocean-life .jelly img,:not(.has-coral)>.ocean-life .coral img{animation-play-state:paused}
+@media(max-width:650px){.lantern.one{width:64px;right:0;top:16%}.lantern.two{display:none}.jelly{width:48px;right:0;top:49%}.coral{width:85px;right:-14px;bottom:3%}.curious-visitor{width:60px}}
+@media(prefers-reduced-motion:reduce){.water-ripples{display:none}.water-animal img{animation:none!important}}
 .cave-torch{position:absolute;inset:0;opacity:0;transition:opacity .6s;background:radial-gradient(circle 145px at var(--light-x,75vw) var(--light-y,40vh),#efcf8124,transparent);mask-image:radial-gradient(circle 155px at var(--light-x,75vw) var(--light-y,40vh),#000,transparent)}
 .torch-on .cave-torch{opacity:1}
 .mineral-wall{position:absolute;inset:0;background:repeating-linear-gradient(126deg,transparent 0 100px,#d4ba7340 102px 104px,transparent 107px 180px),radial-gradient(ellipse,#eedcabaa 0 1px,transparent 2px) 0 0/67px 91px;opacity:.6}
-.sonar-ring{position:absolute;left:var(--sonar-x);top:var(--sonar-y);width:40px;height:40px;margin:-20px;border:1px solid #9fe1df;border-radius:50%;opacity:0}
-.sonar-life{opacity:0;position:absolute;inset:0}
-.sonar-life i{position:absolute;left:85%;top:30%;width:27px;height:10px;background:#7bacb24d;border-radius:60% 45%;transform:rotate(-12deg)}
-.sonar-life i:after{content:'';position:absolute;right:-7px;top:0;border-right:8px solid #7bacb24d;border-top:5px solid transparent;border-bottom:5px solid transparent}
-.sonar-life i:nth-child(2){left:16%;top:63%;transform:scale(.6) rotate(15deg)}
-.sonar-life i:nth-child(3){left:90%;top:71%;transform:scale(.8)}
-.sonar-playing .sonar-ring{animation:sonar-spread 2.6s ease-out}
-.sonar-playing .sonar-life{animation:sonar-reveal 3.2s ease-out}
-.curious-visitor{position:absolute;right:6%;top:37%;width:26px;height:18px;border-radius:70% 40% 40% 70%;background:#9ed7d766;box-shadow:0 0 14px #9bd5dc22;opacity:0;transform:translateX(90px)}
-.curious-visitor:after{content:'';position:absolute;right:-9px;top:2px;border-right:10px solid #9ed7d755;border-top:7px solid transparent;border-bottom:7px solid transparent}
-.curious-visitor i{position:absolute;left:5px;top:5px;width:3px;height:3px;border-radius:50%;background:#d4f4ee}
-.visitor-arrived .curious-visitor{animation:visitor-approach 9s ease-in-out both}
 .crossing-wash{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 8% 50%,#e6d6a644,transparent 45%)}
 .surface-crossing .crossing-wash{animation:crossing-light 2.5s ease-in-out}
 .at-earth-centre #elevator-art{filter:drop-shadow(0 0 15px #efb45e88)}
@@ -31,9 +47,7 @@
 .encounters-paused *{animation-play-state:paused!important}
 @keyframes glass-answer{0%,45%{opacity:0;transform:scale(.5)}50%,72%{opacity:.7}65%,100%{opacity:0;transform:scale(1.8)}}
 @keyframes cabin-nod{0%,100%{transform:rotate(0)}35%{transform:rotate(-2deg)}65%{transform:rotate(2deg)}}
-@keyframes sonar-spread{0%{opacity:.5;transform:scale(.3)}100%{opacity:0;transform:scale(30)}}
-@keyframes sonar-reveal{0%,100%{opacity:0}35%,55%{opacity:1}}
 @keyframes visitor-approach{0%,100%{opacity:0;transform:translateX(90px)}30%,65%{opacity:.8;transform:translateX(-12px)}75%{opacity:.6;transform:translateX(-4px)}}
 @keyframes crossing-light{0%,100%{opacity:0}40%{opacity:.5}}
 @media(max-width:650px){.cave-torch{background-size:auto}.curious-visitor{right:4%;top:26%}}
-@media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}.sonar-playing .sonar-life{animation:sonar-reveal 3s linear!important}.visitor-arrived .curious-visitor{transform:none;animation:sonar-reveal 8s linear!important}}
+@media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}.visitor-arrived .curious-visitor{transform:none;animation:water-visitor-fade 8s linear!important}}

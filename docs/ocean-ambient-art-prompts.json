@@ -1,0 +1,18 @@
+{
+  "mode": "Built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "path": "dist/images/ambient-lanternfish.png",
+      "prompt": "Standalone transparent cutout for Sound Elevator. Hand-painted watercolor and gouache storybook natural-history illustration, fine ink details and textured pigments matching softly painted educational ocean illustrations. One small side-view lanternfish facing left, slender silvery indigo body, subtle turquoise iridescence, detailed translucent amber fins, large natural eye, tiny cream photophores along belly. Complete anatomically plausible fish, no bubbles or scenery. Square image, generous transparent margin, no text, labels, border, panels or cast shadow. Readable at small size."
+    },
+    {
+      "path": "dist/images/ambient-jelly.png",
+      "prompt": "Standalone transparent cutout for Sound Elevator. Hand-painted watercolor and gouache storybook natural-history illustration, fine ink details and textured pigments matching softly painted educational ocean illustrations. One small deep-sea red translucent jellyfish with a rounded burgundy bell, fine amber internal structures and graceful delicate tentacles, complete subject, natural-history specimen, no scenery. Square image, generous transparent margin, no text, labels, border, panels or cast shadow. Readable at small size."
+    },
+    {
+      "path": "dist/images/ambient-coral.png",
+      "prompt": "Standalone transparent cutout for Sound Elevator. Hand-painted watercolor and gouache storybook natural-history illustration, fine ink details and textured pigments matching softly painted educational ocean illustrations. One small cold-water deep-sea coral colony rooted on a modest dark rock, finely branched salmon pink and ivory polyps, delicate watercolor detail, not tropical reef, no fish or blue background. Square image, generous transparent margin, no text, labels, border, panels or cast shadow. Readable at small size."
+    }
+  ]
+}
