@@ -1,0 +1,41 @@
+#encounter-layer{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+#cabin-knock{position:relative;display:block;width:100%;padding:0;border:0;background:transparent;box-shadow:none;border-radius:35%;line-height:0;touch-action:manipulation}
+#cabin-knock:hover{background:transparent;transform:none}
+.cabin-reply{position:absolute;left:38%;top:35%;width:25%;aspect-ratio:1;border:1px solid #fff3b2;border-radius:50%;opacity:0}
+.knock-reply .cabin-reply{animation:glass-answer 1.7s ease-out}
+.knock-reply #elevator-art{animation:cabin-nod 1.4s ease-in-out}
+.cabin[data-reaction=curious] #elevator-art{transform:rotate(3deg);transition:transform 1.5s}
+.cabin[data-reaction=listening] #elevator-art{filter:drop-shadow(0 0 9px #e6ba6866)}
+#elevator-art{transition:transform 1.5s,filter 1.5s}
+#depth-action{position:fixed;right:26px;top:88px;z-index:8;font:14px 'Barlow Condensed',sans-serif;padding:7px 12px;background:#122c37b8;color:#e6f0e8;border:1px solid #b1d6d650;box-shadow:none}
+#depth-action[hidden]{display:none}
+.encounter-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.cave-torch{position:absolute;inset:0;opacity:0;transition:opacity .6s;background:radial-gradient(circle 145px at var(--light-x,75vw) var(--light-y,40vh),#efcf8124,transparent);mask-image:radial-gradient(circle 155px at var(--light-x,75vw) var(--light-y,40vh),#000,transparent)}
+.torch-on .cave-torch{opacity:1}
+.mineral-wall{position:absolute;inset:0;background:repeating-linear-gradient(126deg,transparent 0 100px,#d4ba7340 102px 104px,transparent 107px 180px),radial-gradient(ellipse,#eedcabaa 0 1px,transparent 2px) 0 0/67px 91px;opacity:.6}
+.sonar-ring{position:absolute;left:var(--sonar-x);top:var(--sonar-y);width:40px;height:40px;margin:-20px;border:1px solid #9fe1df;border-radius:50%;opacity:0}
+.sonar-life{opacity:0;position:absolute;inset:0}
+.sonar-life i{position:absolute;left:85%;top:30%;width:27px;height:10px;background:#7bacb24d;border-radius:60% 45%;transform:rotate(-12deg)}
+.sonar-life i:after{content:'';position:absolute;right:-7px;top:0;border-right:8px solid #7bacb24d;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.sonar-life i:nth-child(2){left:16%;top:63%;transform:scale(.6) rotate(15deg)}
+.sonar-life i:nth-child(3){left:90%;top:71%;transform:scale(.8)}
+.sonar-playing .sonar-ring{animation:sonar-spread 2.6s ease-out}
+.sonar-playing .sonar-life{animation:sonar-reveal 3.2s ease-out}
+.curious-visitor{position:absolute;right:6%;top:37%;width:26px;height:18px;border-radius:70% 40% 40% 70%;background:#9ed7d766;box-shadow:0 0 14px #9bd5dc22;opacity:0;transform:translateX(90px)}
+.curious-visitor:after{content:'';position:absolute;right:-9px;top:2px;border-right:10px solid #9ed7d755;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.curious-visitor i{position:absolute;left:5px;top:5px;width:3px;height:3px;border-radius:50%;background:#d4f4ee}
+.visitor-arrived .curious-visitor{animation:visitor-approach 9s ease-in-out both}
+.crossing-wash{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 8% 50%,#e6d6a644,transparent 45%)}
+.surface-crossing .crossing-wash{animation:crossing-light 2.5s ease-in-out}
+.at-earth-centre #elevator-art{filter:drop-shadow(0 0 15px #efb45e88)}
+.at-earth-centre .depth-habitat *{animation-play-state:paused}
+.at-earth-centre .deep-finish h2{color:#f4d6a4}
+.encounters-paused *{animation-play-state:paused!important}
+@keyframes glass-answer{0%,45%{opacity:0;transform:scale(.5)}50%,72%{opacity:.7}65%,100%{opacity:0;transform:scale(1.8)}}
+@keyframes cabin-nod{0%,100%{transform:rotate(0)}35%{transform:rotate(-2deg)}65%{transform:rotate(2deg)}}
+@keyframes sonar-spread{0%{opacity:.5;transform:scale(.3)}100%{opacity:0;transform:scale(30)}}
+@keyframes sonar-reveal{0%,100%{opacity:0}35%,55%{opacity:1}}
+@keyframes visitor-approach{0%,100%{opacity:0;transform:translateX(90px)}30%,65%{opacity:.8;transform:translateX(-12px)}75%{opacity:.6;transform:translateX(-4px)}}
+@keyframes crossing-light{0%,100%{opacity:0}40%{opacity:.5}}
+@media(max-width:650px){#depth-action{right:20px;top:76px;font-size:12px;padding:5px 9px}.cave-torch{background-size:auto}.curious-visitor{right:4%;top:26%}}
+@media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}.sonar-playing .sonar-life{animation:sonar-reveal 3s linear!important}.visitor-arrived .curious-visitor{transform:none;animation:sonar-reveal 8s linear!important}}
