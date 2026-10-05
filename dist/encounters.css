@@ -14,27 +14,17 @@
 .water-playing .water-ripples i:nth-child(2){animation-delay:.4s;rotate:12deg}
 .water-playing .water-ripples i:nth-child(3){animation-delay:.8s;rotate:-9deg}
 .ocean-life{position:absolute;inset:0;opacity:0;transition:opacity 1s}
-[data-habitat=ocean] .ocean-life{opacity:1}
+
 .water-animal{position:absolute;opacity:0;transition:opacity 1.2s;transform-origin:50% 70%;width:95px;pointer-events:none}
 .water-animal img{display:block;width:100%;height:auto;animation:water-swim 13s ease-in-out infinite alternate;filter:drop-shadow(0 4px 10px #00182255)}
-.lantern.one{right:4%;top:23%;width:100px}
-.lantern.two{left:13%;top:69%;width:65px}
-.lantern.two img{scale:-1 1;animation-delay:-7s;animation-duration:17s}
-.jelly{right:3%;top:62%;width:75px}
-.jelly img{animation:water-jelly 11s ease-in-out infinite alternate}
-.coral{right:0;bottom:15%;width:155px;transform-origin:50% 95%}
-.coral img{animation:water-coral 12s ease-in-out infinite alternate;transform-origin:50% 95%}
-.has-lanternfish .lantern{opacity:.68}.has-jelly .jelly{opacity:.55}.has-coral .coral{opacity:.68}
-.curious-visitor{position:absolute;right:8%;top:35%;width:85px;opacity:0;transform:translateX(90px)}
-.curious-visitor img{width:100%;height:auto}
-.visitor-arrived .curious-visitor{animation:visitor-approach 9s ease-in-out both}
+.water-animal{left:0;top:0;right:auto;bottom:auto;transition:opacity .35s;width:90px}
+.lantern.two{width:60px}.lantern.two img{scale:-1 1}
+.jelly{width:70px}.jelly img{animation:water-jelly 11s ease-in-out infinite alternate}
+.coral{width:145px;transform-origin:50% 95%}.coral img{animation:water-coral 12s ease-in-out infinite alternate;transform-origin:50% 95%}
 @keyframes water-spread{0%{opacity:0;transform:scale(.06) rotate(-6deg)}12%{opacity:.6}60%{opacity:.25}100%{opacity:0;transform:scale(1.9) rotate(8deg)}}
 @keyframes water-swim{from{transform:translate(0,0) rotate(-3deg)}to{transform:translate(-22px,9px) rotate(3deg)}}
 @keyframes water-jelly{from{transform:translateY(0) scale(1,.98)}to{transform:translateY(-20px) scale(.97,1.02)}}
 @keyframes water-coral{from{transform:rotate(-1.3deg)}to{transform:rotate(1.3deg)}}
-@keyframes water-visitor-fade{0%,100%{opacity:0}30%,65%{opacity:.65}}
-:not(.has-lanternfish)>.ocean-life .lantern img,:not(.has-jelly)>.ocean-life .jelly img,:not(.has-coral)>.ocean-life .coral img{animation-play-state:paused}
-@media(max-width:650px){.lantern.one{width:64px;right:0;top:16%}.lantern.two{display:none}.jelly{width:48px;right:0;top:49%}.coral{width:85px;right:-14px;bottom:3%}.curious-visitor{width:60px}}
 @media(prefers-reduced-motion:reduce){.water-ripples{display:none}.water-animal img{animation:none!important}}
 .cave-torch{position:absolute;inset:0;opacity:0;transition:opacity .6s;background:radial-gradient(circle 145px at var(--light-x,75vw) var(--light-y,40vh),#efcf8124,transparent);mask-image:radial-gradient(circle 155px at var(--light-x,75vw) var(--light-y,40vh),#000,transparent)}
 .torch-on .cave-torch{opacity:1}
@@ -47,7 +37,8 @@
 .encounters-paused *{animation-play-state:paused!important}
 @keyframes glass-answer{0%,45%{opacity:0;transform:scale(.5)}50%,72%{opacity:.7}65%,100%{opacity:0;transform:scale(1.8)}}
 @keyframes cabin-nod{0%,100%{transform:rotate(0)}35%{transform:rotate(-2deg)}65%{transform:rotate(2deg)}}
-@keyframes visitor-approach{0%,100%{opacity:0;transform:translateX(90px)}30%,65%{opacity:.8;transform:translateX(-12px)}75%{opacity:.6;transform:translateX(-4px)}}
 @keyframes crossing-light{0%,100%{opacity:0}40%{opacity:.5}}
 @media(max-width:650px){.cave-torch{background-size:auto}.curious-visitor{right:4%;top:26%}}
-@media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}.visitor-arrived .curious-visitor{transform:none;animation:water-visitor-fade 8s linear!important}}
+@media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}}
+
+@media(max-width:650px){.water-animal{width:54px}.lantern.two{width:36px}.jelly{width:44px}.coral{width:80px}}

@@ -2,11 +2,11 @@
 (()=>{
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  const layer=document.createElement('div');layer.id='encounter-layer';layer.setAttribute('aria-hidden','true');
- layer.innerHTML='<div class="cave-torch"><div class="mineral-wall"></div></div><div class="water-ripples"><i></i><i></i><i></i></div><div class="ocean-life"><div class="water-animal lantern one"><img data-src="images/ambient-lanternfish.png" alt=""></div><div class="water-animal lantern two"><img data-src="images/ambient-lanternfish.png" alt=""></div><div class="water-animal jelly"><img data-src="images/ambient-jelly.png" alt=""></div><div class="water-animal coral"><img data-src="images/ambient-coral.png" alt=""></div></div><div class="curious-visitor"><img data-src="images/ambient-lanternfish.png" alt=""></div><div class="crossing-wash"></div>';
+ layer.innerHTML='<div class="cave-torch"><div class="mineral-wall"></div></div><div class="water-ripples"><i></i><i></i><i></i></div><div class="ocean-life"><div class="water-animal lantern one"><img data-src="images/ambient-lanternfish.png" alt=""></div><div class="water-animal lantern two"><img data-src="images/ambient-lanternfish.png" alt=""></div><div class="water-animal jelly"><img data-src="images/ambient-jelly.png" alt=""></div><div class="water-animal coral"><img data-src="images/ambient-coral.png" alt=""></div></div><div class="crossing-wash"></div>';
  document.body.append(layer);
  const status=document.createElement('span');status.className='encounter-status';status.setAttribute('role','status');document.body.append(status);
  const cabin=document.querySelector('.cabin'),knock=document.querySelector('#cabin-knock');
- let habitat='',stopId='',pointer=null,lightTimer,down=null,lastPulse=-Infinity,lastKnock=-Infinity,lastSide=0,crossedAt=-Infinity,visitorTimer,replyTimer,visitorShown=new Set();
+ let habitat='',stopId='',pointer=null,lightTimer,down=null,lastPulse=-Infinity,lastKnock=-Infinity,lastSide=0,crossedAt=-Infinity,replyTimer;
  function replay(el,name){el.classList.remove(name);void el.offsetWidth;el.classList.add(name);}
  function lightAt(x,y){layer.style.setProperty('--light-x',x+'px');layer.style.setProperty('--light-y',y+'px');}
  function pulse(x=innerWidth*.7,y=innerHeight*.35){
@@ -54,31 +54,63 @@
   stop.frame.addEventListener('focus',()=>{const r=stop.frame.getBoundingClientRect();explore(r.left+r.width/2,r.top+r.height/2,stop.frame);});
   stop.frame.addEventListener('blur',()=>layer.classList.remove('torch-on'));
  }
+ // Keep one set of creatures alive across stops; never restart their travel phase.
+ let oceanAmount=0,travel=0,lifeFrame=0,lastLifeTime=0;
+ const animals=[...layer.querySelectorAll('.water-animal')];
+ const smooth=(a,b,x)=>{const t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t);};
+ function paintLife(){
+  const depth=Math.max(0,-altitude),mobile=innerWidth<=650;
+  layer.querySelector('.ocean-life').style.opacity=oceanAmount.toFixed(4);
+  animals.forEach((el,i)=>{
+   const coral=el.classList.contains('coral');
+   let opacity,x,y;
+   if(coral){
+    const anchor=STOPS.find(s=>s.id==='under-brine');
+    const distance=position-anchor.p;
+    opacity=(1-smooth(800,2400,Math.abs(distance)))*.55;
+    x=innerWidth-(mobile?50:115);y=innerHeight*.83+distance*.16;
+   }else{
+    const jelly=el.classList.contains('jelly');
+    opacity=jelly?smooth(300,800,depth)*(1-smooth(2200,4200,depth))*.5:smooth(120,350,depth)*(1-smooth(1000,2000,depth))*.6;
+    const phase=((travel/(jelly?95000:65000)+i*.37-position/85000)%1+1)%1;
+    const progress=motion.matches?.25+i*.22:phase;
+    opacity*=smooth(0,.12,progress)*(1-smooth(.88,1,progress));
+    const left=i===1;
+    x=left?(mobile?5:innerWidth*.13):innerWidth-(mobile?42:100);
+    x+=Math.sin(travel/17000+i*2+position/6500)*(mobile?10:32);
+    y=innerHeight*(.1+progress*.75);
+   }
+   el.style.opacity=opacity.toFixed(4);
+   el.style.translate=x.toFixed(2)+'px '+y.toFixed(2)+'px';
+  });
+ }
+ function tickLife(now){
+  lifeFrame=0;if(document.hidden||motion.matches||oceanAmount<.001){lastLifeTime=0;return;}
+  if(lastLifeTime)travel+=Math.min(80,now-lastLifeTime);lastLifeTime=now;paintLife();lifeFrame=requestAnimationFrame(tickLife);
+ }
+ function startLife(){if(!lifeFrame&&!document.hidden&&!motion.matches&&oceanAmount>.001)lifeFrame=requestAnimationFrame(tickLife);}
  function sync(){
   const below=position< -600,environment=below?nearest.environment:'';
   const next=environment==='ocean'?'ocean':environment==='ground'&&nearest.h<=-50?'cave':'';
-  const depth=Math.abs(altitude);
-  layer.classList.toggle('has-lanternfish',next==='ocean'&&depth>=200&&depth<=1100);
-  layer.classList.toggle('has-jelly',next==='ocean'&&depth>=500&&depth<=2500);
-  layer.classList.toggle('has-coral',next==='ocean'&&nearest.id==='under-brine');
-  if(next==='ocean'){for(const img of layer.querySelectorAll('img[data-src]')){if(!img.src)img.src=img.dataset.src;}}
-  const changed=next!==habitat||nearest.id!==stopId;
+  oceanAmount=ambientDepth.update(position,altitude).weights.ocean;
+  if(oceanAmount>.001){for(const img of layer.querySelectorAll('img[data-src]')){if(!img.src)img.src=img.dataset.src;}}
+  paintLife();startLife();
+  const changed=next!==habitat;
   if(next!==habitat){habitat=next;layer.dataset.habitat=next;layer.classList.remove('water-playing','torch-on');layer.querySelectorAll('.water-animal').forEach(el=>el.getAnimations().forEach(a=>a.cancel()));clearTimeout(lightTimer);status.textContent='';}
-  if(changed&&pointer){const target=document.elementFromPoint(pointer.x,pointer.y);if(target)explore(pointer.x,pointer.y,target);}
+  if(next!==''&&changed&&pointer){const target=document.elementFromPoint(pointer.x,pointer.y);if(target)explore(pointer.x,pointer.y,target);}
   const atCentre=nearest.id==='under-centre'&&position<nearest.p+300;
   document.body.classList.toggle('at-earth-centre',atCentre);
   const side=position>180?1:position< -180?-1:0;
   if(side&&lastSide&&side!==lastSide&&performance.now()-crossedAt>5000){replay(layer,'surface-crossing');crossedAt=performance.now();}
   if(side)lastSide=side;
   if(nearest.id!==stopId){
-   stopId=nearest.id;clearTimeout(visitorTimer);layer.classList.remove('visitor-arrived');
+   stopId=nearest.id;
    cabin.dataset.reaction=['under-giant-squid','under-crystals','under-icecube'].includes(stopId)?'curious':stopId==='under-metro'?'listening':'';
   }
-  clearTimeout(visitorTimer);
-  if(stopId==='under-midnight'&&Math.abs(position-nearest.p)<250&&!visitorShown.has(stopId)&&!document.hidden){visitorTimer=setTimeout(()=>{if(nearest.id==='under-midnight'&&!document.hidden){visitorShown.add(stopId);replay(layer,'visitor-arrived');}},3500);}
+
  }
  let frame;addEventListener('scroll',()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(sync);},{passive:true});
- addEventListener('resize',sync);document.addEventListener('visibilitychange',()=>{layer.classList.toggle('encounters-paused',document.hidden);layer.querySelectorAll('.water-animal').forEach(el=>el.getAnimations().forEach(a=>document.hidden?a.pause():a.play()));if(document.hidden){clearTimeout(visitorTimer);down=null;}else sync();});
- motion.addEventListener('change',()=>{layer.querySelectorAll('.water-animal').forEach(el=>el.getAnimations().forEach(a=>a.cancel()));layer.classList.remove('water-playing','visitor-arrived','surface-crossing');});
+ addEventListener('resize',sync);document.addEventListener('visibilitychange',()=>{layer.classList.toggle('encounters-paused',document.hidden);layer.querySelectorAll('.water-animal').forEach(el=>el.getAnimations().forEach(a=>document.hidden?a.pause():a.play()));if(document.hidden){down=null;}else sync();});
+ motion.addEventListener('change',()=>{layer.querySelectorAll('.water-animal').forEach(el=>el.getAnimations().forEach(a=>a.cancel()));layer.classList.remove('water-playing','surface-crossing');paintLife();startLife();});
  sync();
 })();
