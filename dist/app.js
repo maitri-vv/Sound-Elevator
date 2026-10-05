@@ -44,6 +44,7 @@ function saveJourney(){
  try{savedJourney={stop:Math.abs(position)>350?nearest.id:savedJourney?.stop,volume:Number($('#volume').value),seen:[...seen]};localStorage.setItem('sound-elevator-journey',JSON.stringify(savedJourney));}catch(e){}
 }
 function journeyUI(){
+ document.body.classList.toggle('at-ending',position>TOP-450||position<BOTTOM+450);
  document.body.classList.toggle('exploring',Math.abs(position)>350);
  loadNearby(STOPS.indexOf(nearest));
  clearTimeout(saveTimer);saveTimer=setTimeout(saveJourney,400);

@@ -83,3 +83,8 @@ body:not(.exploring) .readout,body:not(.exploring) .journey-nav{visibility:hidde
  .atmosphere-details[open]{background:var(--meter-bg,#fffef4);color:var(--meter-ink,#203a45);border-radius:8px;padding:5px 10px 10px}
  .journey-nav{bottom:155px}#audio-status{bottom:235px}
 }
+
+/* Ending controls must sit above the full-page discoveries layer. */
+.finish,.deep-finish{z-index:2}
+
+.at-ending .readout{visibility:hidden;pointer-events:none}
