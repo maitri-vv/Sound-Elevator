@@ -23,7 +23,7 @@ STOPS.slice(0,-1).forEach((s,i)=>{
  el.innerHTML='<span class="trail-line" aria-hidden="true"></span>'+(mini?'<img class="trail-detail" data-src="'+imgURL(mini)+'" alt="" width="76" height="64" loading="eager" decoding="async">':'')+(note?'<p>'+note+'</p>':'<span class="trail-mark" aria-hidden="true">· &nbsp; · &nbsp; ·</span>');
  if(s.underground&&!next.underground)el.classList.add('surface-gap');el.dataset.position=(s.p+next.p)/2;$('#discoveries').append(el);interludes.push(el);
 });
-$('#elevator-art').src=imgURL('elevator');$('#elevator-art').fetchPriority='high';$('#ground-art').src=imgURL('ground');$('#ground-art').fetchPriority='high';$('#distant-city').src=imgURL('city-skyline');document.querySelectorAll('.cloud').forEach(i=>i.src=imgURL('d06'));$('#ice-clouds').src=imgURL('e01');$('#aurora-art').src=imgURL('e08');
+$('#elevator-art').src=imgURL('elevator');$('#elevator-art').fetchPriority='high';$('#ground-art').src=imgURL('ground');$('#ground-art').fetchPriority='high';
 // Load the current scene and its neighbours; keep decoded images when revisiting.
 function loadNearby(index){
  for(let i=Math.max(0,index-2);i<=Math.min(STOPS.length-1,index+2);i++){
@@ -46,7 +46,7 @@ function saveJourney(){
 function journeyUI(){
  document.body.classList.toggle('at-ending',position>TOP-450||position<BOTTOM+450);
  document.body.classList.toggle('exploring',Math.abs(position)>350);
- loadNearby(STOPS.indexOf(nearest));
+ if(Math.abs(position)>350)loadNearby(STOPS.indexOf(nearest));
  clearTimeout(saveTimer);saveTimer=setTimeout(saveJourney,400);
 }
 [...UNDERGROUND_STOPS.map(s=>s.h),0,2,5,10,20,30,50,80,120,200,320,500,850,1200,2400,4200,6000,9000,14000,20000,35000,65000,82000,100000].forEach(h=>{const t=document.createElement('span');t.className='tick';t.textContent=h.toLocaleString()+' m';t.dataset.height=h;$('.ruler').append(t)});
@@ -97,7 +97,13 @@ function lowerScenery(){
  trees.style.setProperty('--rise',clamp(altitude/1500)*170+'px');
  meadow.classList.toggle('scenery-active',ground>0);trees.classList.toggle('scenery-active',canopy>0);
 }
+function ensureScenery(selector,asset){for(const img of document.querySelectorAll(selector)){if(!img.getAttribute('src'))img.src=asset?imgURL(asset):img.dataset.src;}}
 function scenery(){
+ if(altitude>5)ensureScenery('#canopy-layer img');
+ if(altitude>10)ensureScenery('#distant-city','city-skyline');
+ if(altitude>450)ensureScenery('.cloud','d06');
+ if(altitude>6000)ensureScenery('#ice-clouds','e01');
+ if(altitude>75000)ensureScenery('#aurora-art','e08');
  const under=position<0,depthScene=ambientDepth.update(position,altitude);
  document.body.classList.toggle('underground',depthScene.entry>.55);
  document.body.dataset.depthEnvironment=altitude<0?nearest.environment||'ground':'';
@@ -105,7 +111,7 @@ function scenery(){
  ambientSky.update(altitude,position);lowerScenery();const rgb=under?depthScene.rgb:colorAt(altitude),linear=rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}),luminance=.2126*linear[0]+.7152*linear[1]+.0722*linear[2],night=luminance<.179;document.body.style.setProperty('--hud-ink',night?'#ffffff':'#000000');document.body.style.setProperty('--meter-bg',night?'#152b43':'#fffef4');document.body.style.setProperty('--meter-ink',night?'#f2f8ff':'#203a45');document.body.classList.toggle('night',night);document.body.style.setProperty('--sky',`rgb(${rgb.join(',')})`);$('#ground-art').style.transform=`translateY(${Math.min(Math.abs(position)*.65,900)}px)`;$('#ground-art').style.opacity=1-clamp(Math.abs(position)/750);const cabin=$('.cabin'),ch=$('#elevator-art').getBoundingClientRect().height||164,start=innerHeight-105-ch,target=innerHeight*.5-ch*.5;cabin.style.top=(start+(target-start)*clamp(Math.abs(position)/950))+'px';cabin.classList.toggle('sealed',altitude>=1200);$('#cabin-state').textContent=under?'BELOW THE SURFACE':altitude>=1200?'FIELD NOTES':'';const city=clamp((altitude-15)/35)*(1-clamp((altitude-500)/600));$('#distant-city').style.opacity=city*.3;$('#distant-city').style.transform=`translateY(${clamp(altitude/1000)*180}px) scale(${1-clamp(altitude/1400)*.5})`;const clouds=clamp((altitude-650)/650)*(1-clamp((altitude-12000)/5000));$('#cloud-layer').style.opacity=clouds*.65;$('#cloud-layer').style.transform=`translateY(${Math.sin(position/2400)*70}px)`;$('#ice-clouds').style.opacity=clamp((altitude-7000)/7000)*(1-clamp((altitude-22000)/12000))*.35;$('.star-field').style.opacity=clamp((altitude-20000)/45000);$('#aurora-art').style.opacity=clamp((altitude-83000)/15000)*.35;$('#mist').style.opacity=nearest.gesture==='mist'?clamp(1-Math.abs(position-nearest.p)/850)*.22*(1-nearest.reveal):0;$('#rain-effect').classList.toggle('active',nearest.sound==='rain'&&!nearest.state&&Math.abs(position-nearest.p)<800);}
 function formatHeight(h){const n=Math.abs(h)/(h<=-20000?1000:1),places=n<1?3:n<10?2:n<100?1:0;return (h<0?'−':'')+n.toFixed(places);}
 function updateCounter(){const p=clamp(TOP-scrollY,BOTTOM,TOP),h=interpolate(p,'p','h');$('.meter b').textContent=h<=-20000?'km':'m';$('#digits').textContent=formatHeight(h);}
-function update(){position=clamp(TOP-scrollY,BOTTOM,TOP);altitude=interpolate(position,'p','h');nearest=Math.abs(position)<350?SURFACE_STOP:STOPS.reduce((a,s)=>Math.abs(s.p-position)<Math.abs(a.p-position)?s:a,STOPS[0]);$('.meter b').textContent=altitude<=-20000?'km':'m';$('#digits').textContent=formatHeight(altitude);$('.progress i').style.height=(position>=0?position/TOP:position/BOTTOM)*100+'%';$('#current').textContent=Math.abs(position)<350?'The world at your feet':position>TOP-500?'Everything, all the way below':position<BOTTOM+500?'A world beneath your feet':nearest.title;$('#moving').textContent=Math.abs(position)<15?'AT THE SURFACE':Math.abs(scrollY-lastY)>2?(scrollY<lastY?'GOING UP':'GOING DOWN'):'LISTENING';lastY=scrollY;if(Math.abs(nearest.p-position)<430)seen.add(nearest.id);$('#discovered').textContent=seen.size+' / '+STOPS.length;$('#finish-count').textContent=`You discovered ${seen.size} of ${STOPS.length} little scenes.`;$('#previous').disabled=position<BOTTOM+20;$('#next').disabled=position>TOP-20;STOPS.forEach(s=>{const distance=s.p-position;s.focus=clamp(1-Math.abs(distance)/(innerHeight*.8));s.el.classList.toggle('in-view',Math.abs(distance)<innerHeight);s.el.classList.toggle('arrived',s.focus>.58);s.el.style.setProperty('--focus',s.focus.toFixed(3));s.el.style.setProperty('--pass',clamp((position-s.p+innerHeight*.55)/innerHeight).toFixed(3));s.el.style.setProperty('--drift',reduced?'0px':clamp(distance*.035,-24,24)+'px');if(Math.abs(distance)<90&&!s.crossed){s.crossed=true;s.el.classList.remove('encounter');void s.el.offsetWidth;s.el.classList.add('encounter')}if(Math.abs(distance)>700)s.crossed=false;});journeyUI();scenery();atmosphereReadout();void SoundWorld.preload(SOUNDSCAPES[nearest.id]?.track).catch(()=>{});if(audio)audio.update(altitude,position,nearest);pending=false}
+function update(){position=clamp(TOP-scrollY,BOTTOM,TOP);altitude=interpolate(position,'p','h');nearest=Math.abs(position)<350?SURFACE_STOP:STOPS.reduce((a,s)=>Math.abs(s.p-position)<Math.abs(a.p-position)?s:a,STOPS[0]);$('.meter b').textContent=altitude<=-20000?'km':'m';$('#digits').textContent=formatHeight(altitude);$('.progress i').style.height=(position>=0?position/TOP:position/BOTTOM)*100+'%';$('#current').textContent=Math.abs(position)<350?'The world at your feet':position>TOP-500?'Everything, all the way below':position<BOTTOM+500?'A world beneath your feet':nearest.title;$('#moving').textContent=Math.abs(position)<15?'AT THE SURFACE':Math.abs(scrollY-lastY)>2?(scrollY<lastY?'GOING UP':'GOING DOWN'):'LISTENING';lastY=scrollY;if(Math.abs(nearest.p-position)<430)seen.add(nearest.id);$('#discovered').textContent=seen.size+' / '+STOPS.length;$('#finish-count').textContent=`You discovered ${seen.size} of ${STOPS.length} little scenes.`;$('#previous').disabled=position<BOTTOM+20;$('#next').disabled=position>TOP-20;STOPS.forEach(s=>{const distance=s.p-position;s.focus=clamp(1-Math.abs(distance)/(innerHeight*.8));s.el.classList.toggle('in-view',Math.abs(distance)<innerHeight);s.el.classList.toggle('arrived',s.focus>.58);s.el.style.setProperty('--focus',s.focus.toFixed(3));s.el.style.setProperty('--pass',clamp((position-s.p+innerHeight*.55)/innerHeight).toFixed(3));s.el.style.setProperty('--drift',reduced?'0px':clamp(distance*.035,-24,24)+'px');if(Math.abs(distance)<90&&!s.crossed){s.crossed=true;s.el.classList.remove('encounter');void s.el.offsetWidth;s.el.classList.add('encounter')}if(Math.abs(distance)>700)s.crossed=false;});journeyUI();scenery();atmosphereReadout();if(enabled)void SoundWorld.preload(SOUNDSCAPES[nearest.id]?.track).catch(()=>{});if(audio)audio.update(altitude,position,nearest);pending=false}
 let soundRequest=0;
 function soundControls(){
  $('#sound').textContent=enabled?'\u266b Sound on':'\u266b Sound off';
@@ -147,7 +153,12 @@ $('#share-stop').onclick=async()=>{
  catch(e){$('#share-url').value=url.href;$('#share-dialog').showModal();$('#share-url').select();}
 };
 $('#close-share').onclick=()=>$('#share-dialog').close();
-let interacted=false;['wheel','touchstart','keydown','pointerdown'].forEach(e=>addEventListener(e,()=>interacted=true,{once:true,passive:true}));addEventListener('load',()=>{const h=altitude;layout();if(!interacted&&!linkedStop())goPosition(0,false);else go(h,false);update()});if(document.fonts)document.fonts.ready.then(()=>{const h=altitude;layout();go(h,false);update()});
+// Reveal only after the initial scroll position is established; never wait for all images.
+const fontsReady=document.fonts?document.fonts.ready:Promise.resolve();
+Promise.race([fontsReady,new Promise(resolve=>setTimeout(resolve,350))]).then(()=>{
+ const h=altitude;layout();go(h,false);update();document.documentElement.classList.remove('booting');
+});
+if(document.fonts)document.fonts.ready.then(()=>{const h=altitude;layout();go(h,false);update()});
 const c=$('#wave').getContext('2d');let lastFrame=0,lastAudioFrame=0;
 function draw(t){const dt=Math.min(.05,(t-lastFrame)/1000||.016);lastFrame=t;
  c.clearRect(0,0,130,30);c.strokeStyle=altitude<0||altitude>=10000?'#eef7ff':'#284a59';c.lineWidth=1.6;c.beginPath();const data=audio?.waveform();
