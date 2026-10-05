@@ -7,8 +7,6 @@
 .cabin[data-reaction=curious] #elevator-art{transform:rotate(3deg);transition:transform 1.5s}
 .cabin[data-reaction=listening] #elevator-art{filter:drop-shadow(0 0 9px #e6ba6866)}
 #elevator-art{transition:transform 1.5s,filter 1.5s}
-#depth-action{position:fixed;right:26px;top:88px;z-index:8;font:14px 'Barlow Condensed',sans-serif;padding:7px 12px;background:#122c37b8;color:#e6f0e8;border:1px solid #b1d6d650;box-shadow:none}
-#depth-action[hidden]{display:none}
 .encounter-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .cave-torch{position:absolute;inset:0;opacity:0;transition:opacity .6s;background:radial-gradient(circle 145px at var(--light-x,75vw) var(--light-y,40vh),#efcf8124,transparent);mask-image:radial-gradient(circle 155px at var(--light-x,75vw) var(--light-y,40vh),#000,transparent)}
 .torch-on .cave-torch{opacity:1}
@@ -37,5 +35,5 @@
 @keyframes sonar-reveal{0%,100%{opacity:0}35%,55%{opacity:1}}
 @keyframes visitor-approach{0%,100%{opacity:0;transform:translateX(90px)}30%,65%{opacity:.8;transform:translateX(-12px)}75%{opacity:.6;transform:translateX(-4px)}}
 @keyframes crossing-light{0%,100%{opacity:0}40%{opacity:.5}}
-@media(max-width:650px){#depth-action{right:20px;top:76px;font-size:12px;padding:5px 9px}.cave-torch{background-size:auto}.curious-visitor{right:4%;top:26%}}
+@media(max-width:650px){.cave-torch{background-size:auto}.curious-visitor{right:4%;top:26%}}
 @media(prefers-reduced-motion:reduce){#encounter-layer *,#elevator-art,.cabin-reply{animation:none!important;transition:none!important}.cabin[data-reaction] #elevator-art{transform:none}.knock-reply .cabin-reply{opacity:.6}.sonar-playing .sonar-life{animation:sonar-reveal 3s linear!important}.visitor-arrived .curious-visitor{transform:none;animation:sonar-reveal 8s linear!important}}
