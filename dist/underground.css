@@ -1,11 +1,5 @@
-/* A continuous rock world beneath the surface, with no interactive overlay. */
-#underground-backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;opacity:0;background:linear-gradient(#272e34,#342d2b);contain:paint}
-.rock-strata{position:absolute;inset:-400px -10%;transform:translateY(var(--rock-shift,0px));background:repeating-linear-gradient(174deg,transparent 0 95px,#d4af7520 96px 98px,transparent 100px 155px,#151b2444 156px 195px),repeating-linear-gradient(84deg,transparent 0 235px,#c4b8980b 236px 237px,transparent 240px 410px);opacity:.8}
-.cave-light{position:absolute;inset:0;background:radial-gradient(ellipse at 10% 50%,#edc78920,transparent 38%),radial-gradient(ellipse at 85% 65%,#4e829e20,transparent 45%)}
-.cave-light:after{content:'';position:absolute;inset:0;opacity:var(--deep-glow,0);background:radial-gradient(ellipse at 50% 100%,#b8632820,transparent 65%)}
-.seeping-water{position:absolute;inset:0;opacity:.16;background:repeating-linear-gradient(92deg,transparent 0 17vw,#8cb9ca50 17.1vw 17.15vw,transparent 17.2vw 39vw);mask-image:linear-gradient(transparent,#000 40%,transparent 70%);animation:cave-seep 18s ease-in-out infinite alternate}
-body:not(.underground) #underground-backdrop *{animation-play-state:paused}
-@keyframes cave-seep{to{transform:translateY(38px);opacity:.08}}
+/* Decorative depth habitats; all layers stay behind content. */
+#underground-backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;opacity:0;contain:paint}
 .surface-gap{display:none}
 .stop.underground-stop .art-depth{width:320px;height:auto;aspect-ratio:1;max-width:100%;margin:auto;overflow:hidden;clip-path:inset(3% 3% 5%);position:relative;transform:none}
 .stop.underground-stop .object .art-image{position:absolute;width:300%;height:300%;max-width:none;left:calc(var(--sprite-x)*-100%);top:calc(var(--sprite-y)*-100%);object-fit:fill;filter:none;transform:none;animation:none}
@@ -35,16 +29,38 @@ body:not(.underground) #underground-backdrop *{animation-play-state:paused}
 @media(max-width:650px){.underground-stop .art-frame{height:225px}.stop.underground-stop .art-depth{width:225px}.underground-stop .fact-copy{font-size:17px;line-height:1.45}.underground-stop .narrative h2{font-size:27px}}
 
 .stop.depth-illustration .object .art-image{width:100%;height:100%;left:0;top:0;object-fit:contain}
-body[data-depth-environment=ocean] #underground-backdrop{background:linear-gradient(#082d41,#030e1e)}
-body[data-depth-environment=ocean] .rock-strata{opacity:0}
-body[data-depth-environment=ocean] .seeping-water{background:radial-gradient(circle,#a8e4e8 1px,transparent 2px) 0 0/93px 117px;opacity:.3;mask-image:none}
-body[data-depth-environment=interior] #underground-backdrop{background:radial-gradient(ellipse at bottom,#71351f,#251c24 75%)}
-body[data-depth-environment=interior] .seeping-water{display:none}
-body[data-depth-environment=ice] #underground-backdrop{background:linear-gradient(#173d53,#0c243c)}
-body[data-depth-environment=ice] .rock-strata{opacity:.25;background:repeating-linear-gradient(176deg,transparent 0 110px,#bcebf522 112px 114px,transparent 117px 190px)}
-body[data-depth-environment=ice] .seeping-water{display:none}
-#underground-backdrop{transition:background 1s}
-
 .stop.depth-illustration .art-depth{clip-path:none}
 @media(max-width:650px){.underground-stop .depth-note{letter-spacing:.3px;font-size:11px;max-width:220px;margin-inline:auto}.underground .tick{opacity:.3}}
 @media(max-width:650px){.underground .journey-nav{left:12px;right:auto}}
+
+/* Each habitat has its own wash; opacity blending works in both scroll directions. */
+#underground-backdrop{background:transparent}
+.depth-habitat{position:absolute;inset:0;opacity:0;overflow:hidden}
+.depth-wash{position:absolute;inset:-40px;transform:translateY(var(--depth-shift,0px))}
+.depth-soil{background:linear-gradient(#414333,#423324)}
+.depth-soil .depth-wash{background:repeating-linear-gradient(173deg,transparent 0 90px,#bda77912 92px 95px,transparent 99px 180px)}
+.depth-cave{background:radial-gradient(ellipse at 6% 60%,#3a454b,#1e2329 75%)}
+.depth-cave .depth-wash{background:repeating-linear-gradient(176deg,transparent 0 145px,#afc6c00d 148px 150px,transparent 154px 230px)}
+.depth-ocean{background:linear-gradient(#092c40,#031020)}
+.depth-ocean .depth-wash{opacity:var(--sunbeams);background:conic-gradient(from 155deg at 30% -10%,transparent,#94e2df16 12deg,transparent 25deg,#9adbd21a 32deg,transparent 44deg);animation:depth-rays 19s ease-in-out infinite alternate}
+.depth-ice{background:linear-gradient(#224b62,#0c243c)}
+.depth-ice .depth-wash{background:repeating-linear-gradient(105deg,transparent 0 160px,#bdeef50c 163px 166px,transparent 170px 260px);animation:depth-rays 24s ease-in-out infinite alternate}
+.depth-interior{background:radial-gradient(ellipse at bottom,#663823,#211c27 80%)}
+.depth-interior .depth-wash{opacity:calc(.2 + var(--core-warmth)*.5);background:radial-gradient(ellipse at 5% 85%,#ef9f332c,transparent 45%),radial-gradient(ellipse at 95% 15%,#e36b3524,transparent 50%);animation:depth-heat 22s ease-in-out infinite alternate}
+.depth-habitat i{position:absolute;left:var(--x);top:var(--y);animation-delay:calc(var(--i)*-3.7s);pointer-events:none}
+.depth-soil i{width:3px;height:3px;border-radius:50%;background:#e5c796;opacity:.22;animation-name:depth-dust;animation-duration:24s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+.depth-soil i:nth-of-type(3n){height:25vh;width:1px;top:-4%;background:linear-gradient(#9b876666,transparent);transform:rotate(17deg);animation:none}
+.depth-cave i{width:1px;height:15px;background:linear-gradient(transparent,#abdfeb);opacity:0;animation-name:depth-drip;animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:ease-in}
+.depth-ocean i{width:3px;height:3px;border-radius:50%;background:#c3f3ee;opacity:.25;animation-name:depth-snow;animation-duration:27s;animation-iteration-count:infinite;animation-timing-function:linear}
+.depth-ocean i:nth-of-type(3n){width:5px;height:2px;opacity:.16;animation-duration:38s}
+.depth-ice i{width:3px;height:8px;background:#c9f4ff;opacity:.12;transform:rotate(25deg);animation-name:depth-glint;animation-duration:12s;animation-iteration-count:infinite}
+.depth-interior i{width:12vw;height:22vh;border-left:1px solid #d6923930;border-radius:50%;opacity:.3;animation-name:depth-heat;animation-duration:30s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out}
+@keyframes depth-dust{0%,100%{transform:translate(0,0);opacity:.1}50%{transform:translate(15px,-30px);opacity:.3}}
+@keyframes depth-drip{0%,70%{transform:translateY(-70px);opacity:0}75%{opacity:.3}95%,100%{transform:translateY(170px);opacity:0}}
+@keyframes depth-snow{from{transform:translate(0,-110vh)}to{transform:translate(24px,110vh)}}
+@keyframes depth-rays{from{transform:translateX(-2%) rotate(-3deg)}to{transform:translateX(2%) rotate(3deg)}}
+@keyframes depth-glint{0%,100%{opacity:.06}50%{opacity:.3}}
+@keyframes depth-heat{from{transform:translateY(15px) scale(1)}to{transform:translateY(-15px) scale(1.08)}}
+.depth-habitat:not(.depth-active) *, .depth-paused .depth-habitat *{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.depth-habitat *{animation:none!important}.depth-wash{transform:none}}
+@media(max-width:650px){.depth-habitat i:nth-of-type(n+9){display:none}}
